@@ -1,0 +1,14 @@
+body {
+  background-color: whitesmoke;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-top: 58px;
+  }
+  
