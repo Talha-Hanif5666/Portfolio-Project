@@ -1,22 +1,22 @@
 {
-  "name": "hello-microverse",
+  "name": "portfolio-project",
   "version": "1.0.0",
-  "description": "Project Name:\r Development of a new repo on github with the addition of linters in it.",
+  "description": ">The project is a setup of a mobile first portfolio",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Talha-Hanif5666/Hello-Microverse.git"
+    "url": "git+https://github.com/Talha-Hanif5666/Portfolio-Project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Talha-Hanif5666/Hello-Microverse/issues"
+    "url": "https://github.com/Talha-Hanif5666/Portfolio-Project/issues"
   },
-  "homepage": "https://github.com/Talha-Hanif5666/Hello-Microverse#readme",
+  "homepage": "https://github.com/Talha-Hanif5666/Portfolio-Project#readme",
   "devDependencies": {
     "hint": "^7.1.3",
     "stylelint": "^13.13.1",
