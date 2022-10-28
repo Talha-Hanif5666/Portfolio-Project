@@ -1,7 +1,7 @@
 .main {
   width: 375px;
   height: 6968px;
-  background: #FFFFFF;
+  background: #fff;
 }
 
 .header {
@@ -10,8 +10,8 @@
   background: #3c3a39;
   flex-direction: row;
   order: 0;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 .toolbar {
@@ -30,7 +30,7 @@
   width: 101px;
   height: 25px;
   left: 24px;
-  top: calc(50% - 44px/2);
+  top: calc(50% - 44px / 2);
   border-radius: 8px;
 }
 
@@ -74,7 +74,6 @@
   background: url('../Images/a.png') no-repeat #1c1a19;
   background-position: 100% 100%;
   order: 1;
-  
 }
 
 .headline-fmt {
@@ -105,7 +104,6 @@
   font-size: 24px;
   line-height: 32px;
   display: flex;
-  
   text-align: center;
   color: #fff5e1;
   flex: none;
@@ -117,7 +115,7 @@
   text-align: left;
   width: 327px;
   height: 123px;
-  font-family: 'Poppins','Roboto', sans-serif;
+  font-family: 'Poppins', 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -139,7 +137,6 @@
   justify-content: space-between;
   width: 200px;
   height: 40px;
-  
 }
 
 a:hover {
@@ -170,4 +167,3 @@ a:hover {
   order: 4;
   border-radius: 8px;
 }
-
