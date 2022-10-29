@@ -2,36 +2,48 @@
   width: 375px;
   height: 6968px;
   background: #fff;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  order: 0;
+  left: 0;
+  top: 0;
 }
 
 .header {
   width: 375px;
-  height: 92px;
+  height: 48px;
   background: #3c3a39;
+  display: flex;
   flex-direction: row;
   order: 0;
   left: 0;
   top: 0;
+  width: 100%;
 }
 
 .toolbar {
   display: flex;
   flex-direction: row;
   position: absolute;
+  order: 0;
+  left: 0;
+  top: 0;
   width: 375px;
   height: 48px;
-  top: 44px;
+  background: #3c3a39;
 }
 
 .placeholder {
   display: flex;
+  flex-direction: row;
   align-items: center;
   position: absolute;
   width: 101px;
   height: 25px;
   left: 24px;
-  top: calc(50% - 44px / 2);
   border-radius: 8px;
+  margin-top: 0px;
 }
 
 #text {
@@ -41,29 +53,36 @@
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 24px;
   color: #fff;
+  display: flex;
   flex: none;
   order: 0;
-  flex-grow: 0;
+  margin-top: 20px;
+  align-items: center;
+  text-align: center;
+  
 }
 
 .menu {
   display: flex;
   align-items: center;
   padding: 2px;
+  top: -24px;
   position: absolute;
   width: 25px;
   height: 25px;
-  left: 300px;
+  left: 320px;
   border-radius: 8px;
+  margin-top: 30px;
 }
 
 #menu-icon {
   position: absolute;
+  display: flex;
   width: 18px;
   height: 12px;
   right: 6px;
+  margin-top: -2px;
 }
 
 .headline {
@@ -76,14 +95,19 @@
   order: 1;
 }
 
-.headline-fmt {
-  padding-left: 30px;
+.head {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
 }
 
 .primary-text {
   width: 327px;
   height: 124px;
-  font-family: 'Crete Round', sans-serif;
+  display: flex;
+  margin-left: 24px;
+  margin-top: 120px;
+  font-family: 'Crete Round';
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -95,31 +119,38 @@
   flex-grow: 0;
 }
 
-.supporting-text {
+.secondary-text {
   width: 327px;
   height: 27px;
+  margin-left: 24px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
+  position: absolute;
   display: flex;
-  text-align: center;
+  margin-top: 242px;
   color: #fff5e1;
   flex: none;
   order: 1;
   flex-grow: 0;
+
 }
 
 .description {
   text-align: left;
   width: 327px;
   height: 123px;
+  margin-left: 24px;
   font-family: 'Poppins', 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  position: absolute;
+  display: flex;
+  margin-top: 281px;
   color: #fff;
   flex: none;
   order: 2;
@@ -135,6 +166,9 @@
   list-style-type: none;
   align-items: center;
   justify-content: space-between;
+  position: absolute;
+  display: flex;
+  margin-top: 424px;
   width: 200px;
   height: 40px;
 }
@@ -142,6 +176,8 @@
 a:hover {
   background-color: #ff6b00;
 }
+
+
 
 #github-icon {
   order: 0;
