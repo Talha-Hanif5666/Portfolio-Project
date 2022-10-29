@@ -189,14 +189,12 @@
   align-items: center;
   width: 375px;
   height: 3455px;
-  background: #ffffff;
+  background: #fff;
   order: 2;
   position: absolute;
   margin-top: 582px;
   margin-left: 0%;
   float: left;
-  order: 0;
-  left: 0;
   top: 0;
 }
 
@@ -209,7 +207,6 @@
   justify-content: center;
   justify-content: space-between;
   left: 24px;
-  
 }
 
 #recent {
@@ -223,7 +220,6 @@
   align-items: center;
   justify-content: center;
   color: #1c1a19;
-  
 }
 
 .line {
@@ -240,7 +236,6 @@
   gap: 24px;
   position: relative;
   bottom: 50px;
-  
 }
 
 .featured {
