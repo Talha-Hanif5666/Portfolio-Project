@@ -564,11 +564,11 @@
   margin-left: 20px;
 }
 
-a:hover , ul li:hover {
+a:hover,
+ul li:hover {
   background-color: #ff6b00;
   cursor: pointer;
 }
-
 
 .content-defaults a:hover {
   cursor: pointer;
@@ -695,7 +695,7 @@ a:hover , ul li:hover {
   width: 375px;
   height: 72px;
   border-top: 1px solid #dfe1e6;
-  left:-8px;
+  left: -8px;
 }
 
 .social-icons {
@@ -714,16 +714,6 @@ a:hover , ul li:hover {
   margin-right: 40px;
 }
 
-.social-icons li {
-  display: flex;
-  flex-direction: column;
-  flex: none;
-  align-items: center;
-  justify-items: center;
-  align-content: center;
-
-}
-
 .home {
   top: 5455px;
   margin: 120px 0 58px 0;
@@ -732,4 +722,3 @@ a:hover , ul li:hover {
   width: 375px;
   height: 72px;
 }
-
