@@ -585,7 +585,7 @@ ul li:hover {
   font-size: 32px;
   line-height: 44px;
   text-align: center;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   color: #172b4d;
   margin: 120px 24px 73px 24px;
 }
@@ -602,7 +602,7 @@ ul li:hover {
   border-bottom: 1px solid #dbd8d7;
   margin-bottom: 24px;
   margin-left: 24px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
@@ -666,9 +666,7 @@ ul li:hover {
   position: absolute;
   width: 375px;
   height: 72px;
-  left: 0px;
-  border-top: 1px solid #DFE1E6;
-
+  border-top: 1px solid #dfe1e6;
 }
 
 .social-icons {
