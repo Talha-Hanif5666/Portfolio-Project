@@ -29,7 +29,7 @@
   position: absolute;
   width: 101px;
   height: 25px;
-  left: 24px;
+  left: 20px;
   border-radius: 8px;
   margin-top: 0;
 }
@@ -86,14 +86,14 @@
 .head {
   display: flex;
   flex-direction: column;
-  margin-left: 24px;
+  margin-left: 20px;
 }
 
 .primary-text {
   width: 327px;
   height: 124px;
   display: flex;
-  margin-left: 24px;
+  margin-left: 20px;
   margin-top: 120px;
   font-family: 'Crete Round', serif;
   font-weight: 400;
@@ -109,7 +109,7 @@
 .secondary-text {
   width: 327px;
   height: 27px;
-  margin-left: 24px;
+  margin-left: 20px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -128,7 +128,7 @@
   text-align: left;
   width: 327px;
   height: 123px;
-  margin-left: 24px;
+  margin-left: 20px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -206,7 +206,7 @@
   align-items: center;
   justify-content: center;
   justify-content: space-between;
-  left: 24px;
+  left: 20px;
 }
 
 #recent {
@@ -249,7 +249,7 @@
   width: 327px;
   height: 237px;
   background: url('../Images/Work-img1.png') no-repeat;
-  margin-left: 24px;
+  margin-left: 20px;
 }
 
 .block {
@@ -258,7 +258,7 @@
   width: 327px;
   height: 307px;
   position: relative;
-  left: 24px;
+  left: 20px;
   margin-top: 50px;
 }
 
@@ -303,7 +303,7 @@
   align-self: baseline;
   margin-top: -158px;
   list-style-type: none;
-  margin-left: 24px;
+  margin-left: 20px;
 }
 
 .textblock-tags > li {
@@ -346,7 +346,7 @@
   margin-top: 0;
   width: 200px;
   height: 40px;
-  margin-left: 24px;
+  margin-left: 20px;
 }
 
 .frame43 {
@@ -357,7 +357,7 @@
   width: 375px;
   height: 2436px;
   position: relative;
-  left: 24px;
+  left: 20px;
   margin-top: 12px;
 }
 
