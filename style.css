@@ -430,7 +430,7 @@
   display: inline-block;
   position: relative;
   top: 10px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -585,11 +585,12 @@ ul li:hover {
   color: #f4f1f0;
   border: 1px solid #e05304;
 }
+
 .about-link:hover {
   cursor: pointer;
   background: #fff5e1;
   color: #f55800;
-  border: 1px solid #f55800; 
+  border: 1px solid #f55800;
 }
 
 .contact {
