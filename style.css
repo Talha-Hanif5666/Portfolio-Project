@@ -430,6 +430,11 @@
   display: inline-block;
   position: relative;
   top: 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 .about {
@@ -488,14 +493,11 @@
   position: relative;
   height: 40;
   margin-left: 20px;
-}
-
-.about-hr {
-  width: 327px;
-  position: absolute;
-  border: 1px solid #fff;
-  margin-top: 3300px;
-  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 .about-bottom {
@@ -582,6 +584,12 @@ ul li:hover {
   background: #e05304;
   color: #f4f1f0;
   border: 1px solid #e05304;
+}
+.about-link:hover {
+  cursor: pointer;
+  background: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800; 
 }
 
 .contact {
@@ -720,5 +728,5 @@ ul li:hover {
   left: 112px;
   position: relative;
   width: 375px;
-  height: 72px;
+  height: 12px;
 }
