@@ -773,122 +773,6 @@
     width: 120px;
   }
 
-  .social-media li {
-    margin-bottom: 18px;
-  }
-
-  .textblock-tags > li {
-    background: #fff;
-    border: 1px solid #8993a4;
-    padding: 10px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  .other-content-tags li {
-    width: fit-content;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.24);
-    float: left;
-    margin-right: 12px;
-  }
-
-  .content1-desk button {
-    width: 369px;
-    height: 58px;
-    margin-left: 0;
-    margin-top: 377px;
-    border: none;
-    background-color: #e05304;
-    color: #fff;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 24px;
-  }
-
-  .nav-detail a {
-    display: flex;
-    margin-top: -10px;
-  }
-
-  .toolbar-desktop ul li {
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 20px;
-    color: #fff;
-    margin-right: 32px;
-  }
-
-  .featured button {
-    width: 124px;
-    height: 48px;
-    background: #ff6b00;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 24px;
-    font-style: normal;
-    color: #fff;
-    margin-top: 12px;
-    border: none;
-    margin-left: 710px;
-  }
-
-  .bottom1 button {
-    width: 131px;
-    height: 48px;
-    background: #f55800;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 24px;
-    font-style: normal;
-    color: #fff;
-    border: none;
-    margin-top: 24px;
-  }
-
-  .about-bottom-items2 ul li {
-    list-style: none;
-    margin-bottom: 30px;
-  }
-
-  .about-bottom-items ul li {
-    list-style: none;
-    margin-bottom: 30px;
-  }
-
-  .placeholder a:hover,
-  .about-bottom-subtopic h1:hover,
-  .about-bottom-subtopic2 h1:hover,
-  .about-bottom-subtopic3 h1:hover,
-  .about-bottom-items li:hover,
-  .about-bottom-items2 li:hover,
-  .about-bottom-items3 li:hover,
-  .social-icons li:hover,
-  .other-content-tags li:hover,
-  .textblock-tags li:hover,
-  .social-media li:hover,
-  .toolbar-desktop ul li:hover {
-    background: #e05304;
-    cursor: pointer;
-  }
-
-  .content1-desk button:hover,
-  .featured button:hover,
-  .about-top a:hover,
-  .bottom1 button:hover {
-    cursor: pointer;
-    background: #fff5e1;
-    color: #f55800;
-    border: 1px solid #f55800;
-  }
-
   .nav-detail ul {
     list-style: none;
     width: 255px;
@@ -1440,5 +1324,121 @@
     height: 40px;
     margin-right: 100px;
     margin-top: 20px;
+  }
+
+  .content1-desk button {
+    width: 369px;
+    height: 58px;
+    margin-left: 0;
+    margin-top: 377px;
+    border: none;
+    background-color: #e05304;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .nav-detail a {
+    display: flex;
+    margin-top: -10px;
+  }
+
+  .featured button {
+    width: 124px;
+    height: 48px;
+    background: #ff6b00;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    font-style: normal;
+    color: #fff;
+    margin-top: 12px;
+    border: none;
+    margin-left: 710px;
+  }
+
+  .bottom1 button {
+    width: 131px;
+    height: 48px;
+    background: #f55800;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    font-style: normal;
+    color: #fff;
+    border: none;
+    margin-top: 24px;
+  }
+
+  .social-media li {
+    margin-bottom: 18px;
+  }
+
+  .textblock-tags > li {
+    background: #fff;
+    border: 1px solid #8993a4;
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .other-content-tags li {
+    width: fit-content;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.24);
+    float: left;
+    margin-right: 12px;
+  }
+
+  .toolbar-desktop ul li {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    margin-right: 32px;
+  }
+
+  .about-bottom-items2 ul li {
+    list-style: none;
+    margin-bottom: 30px;
+  }
+
+  .about-bottom-items ul li {
+    list-style: none;
+    margin-bottom: 30px;
+  }
+
+  .placeholder a:hover,
+  .about-bottom-subtopic h1:hover,
+  .about-bottom-subtopic2 h1:hover,
+  .about-bottom-subtopic3 h1:hover,
+  .about-bottom-items li:hover,
+  .about-bottom-items2 li:hover,
+  .about-bottom-items3 li:hover,
+  .social-icons li:hover,
+  .other-content-tags li:hover,
+  .textblock-tags li:hover,
+  .social-media li:hover,
+  .toolbar-desktop ul li:hover {
+    background: #e05304;
+    cursor: pointer;
+  }
+
+  .content1-desk button:hover,
+  .featured button:hover,
+  .about-top a:hover,
+  .bottom1 button:hover {
+    cursor: pointer;
+    background: #fff5e1;
+    color: #f55800;
+    border: 1px solid #f55800;
   }
 }
