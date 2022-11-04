@@ -800,6 +800,8 @@
     order: 0;
     flex-grow: 0;
     margin-top: 190px;
+    animation-name: color-change;
+    animation-duration: 6s;
   }
 
   .secondary-text {
@@ -926,7 +928,8 @@
     height: 448px;
     margin-top: 0;
     margin-left: 0;
-    background: url(.Images/desk-img.png) no-repeat #5b5957;
+    background: url(.Images/desk-img.png) no-repeat rgb(255, 107, 0);
+    transition: width 2s, height 2s;
   }
 
   .block {
@@ -1441,4 +1444,19 @@
     color: #f55800;
     border: 1px solid #f55800;
   }
+}
+
+@keyframes color-change {
+  from {
+    color: green;
+  }
+  to {
+    color: red;
+  }
+}
+
+.img-deskt:hover {
+  width: 800px;
+  height: 500px;
+  cursor: pointer;
 }
