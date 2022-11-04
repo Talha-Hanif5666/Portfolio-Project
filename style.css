@@ -938,8 +938,12 @@
     height: 448px;
     margin-top: 0;
     margin-left: 0;
-    background: url(.Images/desk-img.png) no-repeat rgb(255, 107, 0);
+    background: url(.Images/desk-img.png) no-repeat;
     transition: width 2s, height 2s;
+  }
+
+  #img-deskt {
+  transition: width 2s, height 2s;
   }
 
   .block {
@@ -1462,9 +1466,9 @@
   to {color: red;}
 }
 
-.img-deskt:hover {
-  width: 800px;
-  height: 500px;
+#img-deskt:hover {
+  width: 600px;
+  height: 400px;
   cursor: pointer;
 }
 
