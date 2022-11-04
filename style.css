@@ -99,7 +99,11 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+    animation-name: color-change;
+    animation-duration: 6s;
   }
+
+  
 
   .secondary-text {
     width: 327px;
@@ -878,6 +882,8 @@
     font-weight: 400;
     font-size: 40px;
     line-height: 52px;
+    animation-name: color-change;
+    animation-duration: 6s;
   }
 
   .title .line {
