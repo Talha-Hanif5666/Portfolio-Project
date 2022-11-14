@@ -774,6 +774,12 @@
 
   .close {
     font-size: 30px;
+    color: #67798E;
+    font-weight: bold;
+  }
+
+  .close:hover {
+    color: blue;
   }
 
   #menu-list {
@@ -791,6 +797,11 @@
     list-style-type: none;
     margin-top: 24px;
     margin-bottom: 15px;
+  }
+
+  #mlist li a {
+    text-decoration: none;
+    color: #fff;
   }
 
   #menu-list hr{
