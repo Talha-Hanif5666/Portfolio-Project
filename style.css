@@ -1,3 +1,9 @@
+*{
+  margin :0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @media (max-width: 767px) {
   .main {
     width: 375px;
@@ -820,7 +826,7 @@
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin-top: -50px;
+    margin-top: 0px;
     animation-name: color-change;
     animation-duration: 6s;
   }
@@ -838,6 +844,7 @@
     order: 2;
     flex-grow: 0;
     margin-left: 0;
+    margin-top: 12px;
     animation-name: color-change;
     animation-duration: 6s;
   }
@@ -852,7 +859,7 @@
     align-items: baseline;
     justify-content: space-between;
     margin-top: -275px;
-    margin-left: -144px;
+    margin-left: -104px;
   }
 
   .works {
@@ -1157,7 +1164,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    margin-top: -40px;
+    margin-top: 0px;
     margin-left: 0;
   }
 
