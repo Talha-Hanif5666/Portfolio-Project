@@ -767,9 +767,8 @@
   }
 
   .close {
-    font-size: 30px;
+    font-size: 40px;
     color: #67798e;
-    font-weight: bold;
   }
 
   .close:hover {
@@ -807,7 +806,154 @@
     right: 0;
     bottom: 0;
   }
+
+  .pop-up-mobile{
+    width: 343px;
+    height: 718px;
+    background-color: #fff;
+    margin-top: 60px;
+    margin-left: 16px;
+    z-index: 2;
+    display: non;
 }
+
+  .pop-up-header{
+    font-family: Roboto, sans-serif;
+    Font-style: Bold;
+    Font-size: 22px;
+    Line-height: 44px;
+    Line-height: 117%;
+    Vertical-align: Top;
+    margin-left: 16px;
+}
+
+.pop-up-mobile h2 {
+  margin-top: 30px;
+  color: #172B4D;
+}
+
+.pop-up-mobile .close {
+  float: right;
+  margin-top: -25px;
+  margin-right: 30px;
+}
+
+.pop-up-tags {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: 8px;
+  width: 297px;
+  height: 40px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  align-self: baseline;
+  list-style-type: none;
+  margin-top: 65px;
+  margin-left: 16px;
+}
+
+.pop-up-tags > li {
+  background: #fff;
+  border: 1px solid #8993a4;
+  padding: 10px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.mobile-popup-img {
+  height: 220px;
+  width: 311px;
+  left: 16px;
+  margin-top: 24px;
+  border-radius: 0px;
+  margin-left: 16px;
+}
+
+.popup-description {
+  height: 220px;
+width: 318px;
+left: 0px;
+top: 0px;
+border-radius: nullpx;
+margin-left: 16px;
+
+}
+
+.popup-description p {
+font-family: Inter, sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+#see-live {
+  background-color: #ff6b00;
+  color: white;
+  text-decoration: none;
+  height: 48px;
+  font-family: Inter;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 24px;
+  line-height: 24px;
+  margin-left: 16px;
+  width: 134px;
+  border: none;
+  padding-right: 20px;
+}
+
+#see-live img {
+  position: absolute;
+  margin-top: 1px;
+  padding-left: 10px;
+
+}
+
+#see-source {
+  background-color: #ff6b00;
+  color: white;
+  text-decoration: none;
+  height: 48px;
+  font-family: Inter;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 24px;
+  line-height: 24px;
+  width: 159px;
+  margin-left: 17px;
+  border: none;
+  padding-right: 20px;
+}
+
+#see-source img {
+  position: absolute;
+  margin-top: 1px;
+  padding-left: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+}
+
+
 
 /* For big screens */
 
@@ -989,6 +1135,10 @@
   }
 
   #menu- {
+    display: none;
+  }
+
+  .pop-up-mobile{
     display: none;
   }
 
