@@ -23,6 +23,20 @@
           <img id="menu-icon" src="Images\Union.png" alt="menu-icon">
         </a>
       </nav>
+      <div id="menu-">
+        <div id="closed">
+          <span class="close">&times;</span>
+        </div>
+        <div id="menu-list">
+          <ul id="mlist">
+            <li><a href="#recent-work">Portfolio</a></li><hr>
+             <li><a href="#about-myself">About</a></li><hr>
+            <li><a href="#contact">Contact</a></li> <hr>
+          </ul>
+        </div>
+      </div>
+
+
       <nav class="toolbar-desktop">
         <div class="placeholder"><a>Talha Hanif</a></div>
         <div class="nav-detail">
@@ -60,7 +74,7 @@
   </div>
 
 <section>
-  <div class="works">
+  <div class="works" id="recent-work">
     <div class="title">
       <h2 id="recent" >My Recent Works</h2>
       <div class="line"><img src="Images\line.png" alt="line.png"></div>
@@ -224,9 +238,9 @@
   </section>
 
   <section>
-    <div class="about">
+    <div class="about" id="about-myself">
       <div class="about-top">
-        <h2 class="about-primary-text">About me</h2>
+        <h2 class="about-primary-text" id="aboutbtm">About me</h2>
         <p class="about-description">Hello I’m a software developer! I can help you build a product , feature or website
           Look through some of my work and experience! If you like what you see and have a project you need coded, don’t
           hestiate to contact me.</p>
@@ -273,7 +287,7 @@
         </ul>
       </div> 
 
-      <div class="bottom-desk">
+      <div class="bottom-desk" id="bottom-desk">
         
         <div class="about-bottom-subtopic">
         <div class="subtopic-language">
@@ -322,7 +336,7 @@
     </div>
 </section>
 
-<section class="contact">
+<section class="contact" id="contact">
   <div class="bottom">
     <p class="text">I'm always interested in hearing about
        new projects, so if you'd like to chat please get in 
@@ -367,5 +381,6 @@
         <img src="Images\Shape.png" alt="home.png">
      </div>
 </footer>
+<script src="index.js"></script>
 </body>
 </html>
