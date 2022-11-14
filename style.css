@@ -1,5 +1,5 @@
-*{
-  margin :0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -88,7 +88,7 @@
     background-position: 100% 100%;
     order: 1;
     background-color: #1c1a19;
-    background-position-y: 220px ;
+    background-position-y: 220px;
   }
 
   .primary-text {
@@ -173,7 +173,7 @@
     order: 2;
     position: absolute;
     margin-top: 590px;
-    margin-left: 0px;
+    margin-left: 0;
     float: left;
     top: 0;
   }
@@ -494,11 +494,7 @@
     align-self: center;
     text-align: center;
     margin-left: 40px;
-    width: 281px; 
-  }
-
-  .subtopic-language{
-    margin-bottom: 20px;
+    width: 281px;
   }
 
   .about-bottom-subtopic {
@@ -539,6 +535,7 @@
 
   .subtopic-language {
     list-style-image: url("./Images/Rectangle55.png");
+    margin-bottom: 20px;
   }
 
   .subtopic-frameworks {
@@ -595,7 +592,7 @@
     position: relative;
     top: 5593px;
     background-color: #fff;
-    left: 0px;
+    left: 0;
     height: 849px;
   }
 
@@ -696,10 +693,6 @@
     display: none;
   }
 
-  #menu- {
-    display: none;
-  } 
-
   .bottom button:hover {
     cursor: pointer;
     background: #fff5e1;
@@ -760,21 +753,22 @@
 
   #menu- {
     z-index: 1;
-    background-color:#3C3A39;
-    height: 720px
-
+    background-color: #3c3a39;
+    height: 720px;
+    display: none;
   }
-  #closed{
+
+  #closed {
     float: right;
     margin-right: 38px;
-    color:#67798E;
+    color: #67798e;
     size: 20px;
     margin-top: 62px;
   }
 
   .close {
     font-size: 30px;
-    color: #67798E;
+    color: #67798e;
     font-weight: bold;
   }
 
@@ -783,16 +777,16 @@
   }
 
   #menu-list {
-    margin-top: 108px ;
+    margin-top: 108px;
   }
 
   #mlist li {
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 70;
     font-size: 32px;
     line-height: 44px;
-    color: #FFF5E1;
+    color: #fff5e1;
     margin-left: 40px;
     list-style-type: none;
     margin-top: 24px;
@@ -804,20 +798,28 @@
     color: #fff;
   }
 
-  #menu-list hr{
-    color: #6F6C6B;
-    background-color: #6F6C6B;
-    width: 327px ;
+  #menu-list hr {
+    color: #6f6c6b;
+    background-color: #6f6c6b;
+    width: 327px;
     height: 1px;
     margin-left: 24px;
-    right: 0px;
-    bottom: 0px;
-
-    
+    right: 0;
+    bottom: 0;
   }
 }
- 
-/* For big screens */ /* For big screens *//* For big screens *//* For big screens *//* For big screens *//* For big screens */
+
+/* For big screens */
+
+/* For big screens */
+
+/* For big screens */
+
+/* For big screens */
+
+/* For big screens */
+
+/* For big screens */
 
 @media (min-width: 768px) {
   .main {
@@ -897,7 +899,7 @@
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin-top: 0px;
+    margin-top: 0;
     animation-name: color-change;
     animation-duration: 6s;
   }
@@ -964,7 +966,7 @@
     animation-duration: 6s;
   }
 
-  .bottom-desk{
+  .bottom-desk {
     display: none;
   }
 
@@ -1002,7 +1004,7 @@
 
   #menu- {
     display: none;
-  } 
+  }
 
   .line-desktop {
     margin-top: 26px;
@@ -1029,7 +1031,7 @@
   }
 
   #img-deskt {
-  transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
   }
 
   .block {
@@ -1243,7 +1245,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    margin-top: 0px;
+    margin-top: 0;
     margin-left: 0;
   }
 
@@ -1295,7 +1297,7 @@
     line-height: 43px;
     display: flex;
     align-items: center;
-    margin-left: 0px;
+    margin-left: 0;
     margin-top: 160px;
     color: #fff;
   }
@@ -1321,7 +1323,7 @@
     line-height: 43px;
     display: flex;
     align-items: center;
-    margin-left: 0px;
+    margin-left: 0;
     margin-top: 195px;
     color: #fff;
   }
@@ -1548,10 +1550,15 @@
 }
 
 @keyframes color-change {
-  from {color: green;}
-  to {color: red;}
+  from {
+    color: green;
+  }
+
+  to {
+    color: red;
+  }
 }
- 
+
 #img-deskt:hover {
   width: 600px;
   height: 400px;
@@ -1563,4 +1570,3 @@
   height: 72px;
   cursor: pointer;
 }
-
