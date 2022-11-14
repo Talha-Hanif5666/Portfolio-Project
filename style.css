@@ -811,16 +811,6 @@
 
 /* For big screens */
 
-/* For big screens */
-
-/* For big screens */
-
-/* For big screens */
-
-/* For big screens */
-
-/* For big screens */
-
 @media (min-width: 768px) {
   .main {
     width: 1440px;
@@ -964,10 +954,6 @@
     line-height: 52px;
     animation-name: color-change;
     animation-duration: 6s;
-  }
-
-  #bottom-desk {
-    display: none;
   }
 
   .title .line {
