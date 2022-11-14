@@ -1,3 +1,9 @@
+*{
+  margin :0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @media (max-width: 767px) {
   .main {
     width: 375px;
@@ -99,7 +105,11 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+    animation-name: color-change;
+    animation-duration: 6s;
   }
+
+  
 
   .secondary-text {
     width: 327px;
@@ -800,6 +810,8 @@
     order: 0;
     flex-grow: 0;
     margin-top: 190px;
+    animation-name: color-change;
+    animation-duration: 6s;
   }
 
   .secondary-text {
@@ -814,7 +826,9 @@
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin-top: -50px;
+    margin-top: 0px;
+    animation-name: color-change;
+    animation-duration: 6s;
   }
 
   .description {
@@ -830,6 +844,9 @@
     order: 2;
     flex-grow: 0;
     margin-left: 0;
+    margin-top: 12px;
+    animation-name: color-change;
+    animation-duration: 6s;
   }
 
   .social-media {
@@ -842,7 +859,7 @@
     align-items: baseline;
     justify-content: space-between;
     margin-top: -275px;
-    margin-left: -144px;
+    margin-left: -104px;
   }
 
   .works {
@@ -872,6 +889,8 @@
     font-weight: 400;
     font-size: 40px;
     line-height: 52px;
+    animation-name: color-change;
+    animation-duration: 6s;
   }
 
   .title .line {
@@ -926,7 +945,12 @@
     height: 448px;
     margin-top: 0;
     margin-left: 0;
-    background: url(.Images/desk-img.png) no-repeat #5b5957;
+    background: url(.Images/desk-img.png) no-repeat;
+    transition: width 2s, height 2s;
+  }
+
+  #img-deskt {
+  transition: width 2s, height 2s;
   }
 
   .block {
@@ -1140,7 +1164,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    margin-top: -40px;
+    margin-top: 0px;
     margin-left: 0;
   }
 
@@ -1358,6 +1382,7 @@
     margin-top: 12px;
     border: none;
     margin-left: 710px;
+    transition: width 2s, height 2s;
   }
 
   .bottom1 button {
@@ -1441,4 +1466,21 @@
     color: #f55800;
     border: 1px solid #f55800;
   }
+}
+
+@keyframes color-change {
+  from {color: green;}
+  to {color: red;}
+}
+ 
+#img-deskt:hover {
+  width: 600px;
+  height: 400px;
+  cursor: pointer;
+}
+
+.featured button:hover {
+  width: 186px;
+  height: 72px;
+  cursor: pointer;
 }
