@@ -18,6 +18,20 @@ const worksectiondesk = document.querySelector('.desk-html');
 
 //Applying HTML for mobile cards
 worksection.innerHTML = `
+<div class="featured">
+<div class="img"> </div>
+<div class="img-deskt"><img src="./Images/desk-img.png" id="img-deskt" alt=""> </div>
+<div class="block">
+    <div class="multi"> Multi-Post Stories </div>
+    <div class="sup">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</div>
+</div>
+<ul class="textblock-tags">
+  <li>css</li>
+  <li>html</li>
+  <li>bootstrap</li>
+  <li>Ruby</li>
+</ul>
+<a href="#main-id"><button class="smallbutton" id="deskbutton" type="submit" value="submit">See Project</button></a>
         <div class="proj" id="project"><a href="#" id="project">
           <img src="./Images/Seeproj.png" alt="proj.png"></a></div>
       </div>
@@ -245,6 +259,32 @@ menu.onclick = function() {
   },
   {
     id: 5,
+    title: 'Profesional Art Printing Data',
+    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    tecnologies: {
+      tech1: 'html',
+      tech2: 'bootstrap',
+      tech3: 'Ruby',
+    },
+    live: 'https://talha-hanif5666.github.io/',
+    source: 'https://talha-hanif5666.github.io/',
+    img: './Images/Mobile-popup.png',
+  },
+  {
+    id: 6,
+    title: 'Profesional Art Printing Data',
+    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    tecnologies: {
+      tech1: 'html',
+      tech2: 'bootstrap',
+      tech3: 'Ruby',
+    },
+    live: 'https://talha-hanif5666.github.io/',
+    source: 'https://talha-hanif5666.github.io/',
+    img: './Images/Mobile-popup.png',
+  },
+  {
+    id: 7,
     title: 'Profesional Art Printing Data',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     tecnologies: {
