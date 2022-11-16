@@ -817,9 +817,8 @@
     height: 718px;
     background-color: #fff;
     margin-top: 600px !important;
-    margin-left: 16px;
+    margin-left: 32px;
     z-index: 1 !important;
-    display: none;
     position: absolute;
     border: solid #5b5957;
 }
@@ -829,11 +828,10 @@
     height: 82px;
     font-family: Roboto, sans-serif;
     Font-style: Bold;
-  
+    margin-left: 32px;
     Line-height: 44px;
     Line-height: 117%;
     Vertical-align: Top;
-    margin-left: 16px;
     margin-top: 76px;
 }
 
@@ -861,8 +859,8 @@
   flex-grow: 0;
   align-self: baseline;
   list-style-type: none;
-  margin-top: -20px;
-  margin-left: 16px;
+  margin-top: -30px;
+  margin-left: 32px;
 }
 
 .pop-up-tags > li {
@@ -879,10 +877,10 @@
 .mobile-popup-img {
   height: 120px;
   width: 311px;
-margin-top: 5px;
-border-radius: 0px;
-margin-left: 16px;
-z-index: 9999;
+  margin-top: 10px;
+  border-radius: 0px;
+  margin-left: 32px;
+  z-index: 1;
 }
 
 .popup-description {
@@ -891,7 +889,7 @@ z-index: 9999;
   left: 16px;
   margin-top: 0px;
   border-radius: nullpx;
-  margin-left: 16px;
+  margin-left: 32px;
 
 }
 
@@ -906,22 +904,32 @@ margin-top: 138px;
 
 }
 
+.popup-buttons {
+  margin-top: -40px;
+  display: flex;
+  margin-left: 16px;
+}
+
 #see-live {
   background-color: #ff6b00;
   color: white;
+  text-align: center;
   text-decoration: none;
   height: 48px;
   font-family: Inter;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-  margin-top: 24px;
+  margin-top: -84px;
   line-height: 24px;
   margin-left: 16px;
   width: 134px;
   border: none;
-  padding-right: 20px;
+  padding-right: 30px;
+  position: absolute;
+  padding-top: 10px
 }
+
 
 #see-live img {
   position: absolute;
@@ -939,20 +947,23 @@ margin-top: 138px;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-  margin-top: 24px;
+  margin-top: -84px;
   line-height: 24px;
   width: 159px;
-  margin-left: 17px;
+  margin-left: 170px;
   border: none;
-  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px
+  
 }
 
 #see-source img {
-  position: absolute;
-  margin-top: 1px;
+  margin-top: -124px;
   padding-left: 10px;
 
 }
+
+
 
 
 

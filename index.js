@@ -88,7 +88,7 @@ worksection.innerHTML = `
             <li>bootstrap</li>
             <li>Ruby</li>
           </ul>
-          <a class="other-content-link" id="project" href="#" >See Project</a>
+          <a class="other-content-link" id="project" href="#toolbar-" >See Project</a>
         </div>
         <div class="content-defaults content6">
           <h2 class="other-content-title">Profesional Art Printing Data</h2>
@@ -99,7 +99,7 @@ worksection.innerHTML = `
             <li>bootstrap</li>
             <li>Ruby</li>
           </ul>
-          <a class="other-content-link" id="project" href="#" >See Project</a>
+          <a class="other-content-link" id="project" href="#toolbar-" >See Project</a>
         </div>
         </div>
         
@@ -202,7 +202,7 @@ const details = document.querySelectorAll('#project');
     },
     live: 'https://talha-hanif5666.github.io/',
     source: 'https://talha-hanif5666.github.io/',
-    img: 'Images/Img-Placeholder.png',
+    img: './Images/Mobile-popup.png',
   },
   {
     id: 1,
@@ -215,7 +215,7 @@ const details = document.querySelectorAll('#project');
     },
     live: 'https://talha-hanif5666.github.io/',
     source: 'https://talha-hanif5666.github.io/',
-    img: './Images/mob-popup.png',
+    img: './Images/Mobile-popup.png',
   },
   {
     id: 2,
@@ -228,7 +228,7 @@ const details = document.querySelectorAll('#project');
     },
     live: 'https://talha-hanif5666.github.io/',
     source: 'https://talha-hanif5666.github.io/',
-    img: './Images/mob-popup.png',
+    img: './Images/Mobile-popup.png',
   },
   {
     id: 3,
@@ -241,7 +241,7 @@ const details = document.querySelectorAll('#project');
     },
     live: 'https://talha-hanif5666.github.io/',
     source: 'https://talha-hanif5666.github.io/',
-    img: './Images/mob-popup.png',
+    img: './Images/Mobile-popup.png',
   },
   {
     id: 4,
@@ -254,7 +254,7 @@ const details = document.querySelectorAll('#project');
     },
     live: 'https://talha-hanif5666.github.io/',
     source: 'https://talha-hanif5666.github.io/',
-    img: './Images/mob-popup.png',
+    img: './Images/Mobile-popup.png',
   },
   {
     id: 5,
@@ -267,7 +267,7 @@ const details = document.querySelectorAll('#project');
     },
     live: 'https://talha-hanif5666.github.io/',
     source: 'https://talha-hanif5666.github.io/',
-    img: './Images/mob-popup.png',
+    img: './Images/Mobile-popup.png',
   },
 ];
 
@@ -291,8 +291,8 @@ const workdetailsSection = (content) => `
         <p>${cardDetails[content].desc}</p>
       </div>
       <div class="popup-buttons">
-      <a href="${cardDetails[content].live}" id="see-live">See Live <i class="fa fa-external-link"></i></a>
-      <a href="${cardDetails[content].source}" id="see-source"> See Source <i class="fa fa-github"></i></a>  
+      <a href="${cardDetails[content].live}" id="see-live">See Live <img src="./Images/mob-popup.png"></a>
+      <a href="${cardDetails[content].source}" id="see-source"> See Source <img src="./Images/pop-icon-github.png"></a>  
       </div>
 `;
 
@@ -308,7 +308,3 @@ for (let i = 0; i < details.length; i++) {
       }) 
      
   };
-  const closedetails = document.querySelector('.close');
-  closedetails.onclick= function(){
-    div.style.display='none';
-  }
