@@ -9,7 +9,8 @@ const buttonpopupdesk= document.getElementById('desk-button');
 const closepopupdesk= document.getElementById('close-desk-');
 
 const workid = document.querySelector('#works-');
-const worksection = document.querySelector('.frame');
+const worksection = document.querySelector('.mob-html');
+const worksectiondesk = document.querySelector('.desk-html');
 
 
 
@@ -17,20 +18,6 @@ const worksection = document.querySelector('.frame');
 
 //Applying HTML for mobile cards
 worksection.innerHTML = `
-<div class="featured">
-        <div class="img"> </div>
-        <div class="img-deskt"><img src="./Images/desk-img.png" id="img-deskt" alt=""> </div>
-        <div class="block">
-            <div class="multi"> Multi-Post Stories </div>
-            <div class="sup">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</div>
-        </div>
-        <ul class="textblock-tags">
-          <li>css</li>
-          <li>html</li>
-          <li>bootstrap</li>
-          <li>Ruby</li>
-        </ul>
-        <a href="#"><button class="other-content-link" id="project" type="submit" value="submit">See Project</button></a>
         <div class="proj" id="project"><a href="#" id="project">
           <img src="./Images/Seeproj.png" alt="proj.png"></a></div>
       </div>
@@ -104,12 +91,12 @@ worksection.innerHTML = `
         </div>
         
         `;
-
-worksection.insertAdjacentHTML=`
+//Applying HTML for desktop cards
+worksectiondesk.innerHTML=`
 <div class="frame-desk" id="framedesk">
         
         <div class="content-defaults-desk content1-desk">
-          <button>See Project</button>
+        <a href="#"><button class="bigbutton" id="deskbutton">See Project</button></a>
         </div>
 
         <div class="content-defaults-desk content2-desk">
@@ -187,7 +174,7 @@ menu.onclick = function() {
   menu.style.display = 'none';
 }
 
-const details = document.querySelectorAll('#project');
+
 
  // Create new array of objects for mobile
  const cardDetails = [
@@ -271,10 +258,10 @@ const details = document.querySelectorAll('#project');
   },
 ];
 
-// Create pop up section
+// Create pop up section for mob
 const workdetailsSection = (content) => `
 <div class="pop-up-header" id="popupclosemobile">
-        <span class="close">&times;</span>
+        <span class="mobileclose">&times;</span>
         <h2>${cardDetails[content].title}</h2>
       </div>
       <div>
@@ -295,7 +282,8 @@ const workdetailsSection = (content) => `
       <a href="${cardDetails[content].source}" id="see-source"> See Source <img src="./Images/pop-icon-github.png"></a>  
       </div>
 `;
-
+const details = document.querySelectorAll('#project');
+// Create pop up section for mobile
 for (let i = 0; i < details.length; i++) {
   details[i].addEventListener('click', () => {
     let div = document.createElement('div');
@@ -305,6 +293,137 @@ for (let i = 0; i < details.length; i++) {
     let container =document.querySelector('.main');
     let nextdiv =document.querySelector('.toolbar-desktop');
     container.insertBefore(div, nextdiv);
+    let mobclose = document.querySelector('.mobileclose');
+    mobclose.onclick = function() {
+    div.style.display="none"
+  }
       }) 
      
   };
+
+// Create caard section for desktop
+  const deskcardDetails = [
+    {
+      id: 0,
+      title: 'Profesional Art Printing Data',
+      desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      tecnologies: {
+        tech1: 'html',
+        tech2: 'bootstrap',
+        tech3: 'Ruby',
+      },
+      live: 'https://talha-hanif5666.github.io/',
+      source: 'https://talha-hanif5666.github.io/',
+      img: './Images/desktop-popup.png',
+    },
+    {
+      id: 1,
+      title: 'Profesional Art Printing Data',
+      desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard" ,
+      tecnologies: {
+        tech1: 'htmlee',
+        tech2: 'bootstrap',
+        tech3: 'Ruby',
+      },
+      live: 'https://talha-hanif5666.github.io/',
+      source: 'https://talha-hanif5666.github.io/',
+      img: './Images/desktop-popup.png',
+    },
+    {
+      id: 2,
+      title: 'Profesional Art Printing Data',
+      desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      tecnologies: {
+        tech1: 'html',
+        tech2: 'bootstrap',
+        tech3: 'Ruby',
+      },
+      live: 'https://talha-hanif5666.github.io/',
+      source: 'https://talha-hanif5666.github.io/',
+      img: './Images/desktop-popup.png',
+    },
+    {
+      id: 3,
+      title: 'Profesional Art Printing Data',
+      desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      tecnologies: {
+        tech1: 'html',
+        tech2: 'bootstrap',
+        tech3: 'Ruby',
+      },
+      live: 'https://talha-hanif5666.github.io/',
+      source: 'https://talha-hanif5666.github.io/',
+      img: './Images/desktop-popup.png',
+    },
+    {
+      id: 4,
+      title: 'Profesional Art Printing Data',
+      desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      tecnologies: {
+        tech1: 'html',
+        tech2: 'bootstrap',
+        tech3: 'Ruby',
+      },
+      live: 'https://talha-hanif5666.github.io/',
+      source: 'https://talha-hanif5666.github.io/',
+      img: './Images/desktop-popup.png',
+    },
+    {
+      id: 5,
+      title: 'Profesional Art Printing Data',
+      desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      tecnologies: {
+        tech1: 'html',
+        tech2: 'bootstrap',
+        tech3: 'Ruby',
+      },
+      live: 'https://talha-hanif5666.github.io/',
+      source: 'https://talha-hanif5666.github.io/',
+      img: './Images/desktop-popup.png',
+    },
+  ];
+// Create generic card section for desktop
+  const deskworkdetailsSection = (content) => `
+
+  <div class="pop-up-header-desk">
+          <h2>${deskcardDetails[content].title}</h2>
+          <span class="close-desk" id="close-desk-">&times;</span>
+        </div>
+        <div>
+          <ul class="pop-up-tags-desk">
+            <li>${deskcardDetails[content].tecnologies.tech1}</li>
+            <li>${deskcardDetails[content].tecnologies.tech1}</li>
+            <li>${deskcardDetails[content].tecnologies.tech1}</li>
+          </ul>
+        </div>
+        <div class="desk-popup-img">
+        <img src="${deskcardDetails[content].img}" alt="popup-img.png">
+        </div>
+        <div class="popup-description-desk">
+          <p>${deskcardDetails[content].desc}</p>
+        </div>
+        <div class="popup-buttons-desk">
+        <a href="${deskcardDetails[content].live}" id="see-live-desk" class="see-live">See Live <img src="./Images/mob-popup.png"></a>
+        <a href="${deskcardDetails[content].source}" id="see-source-desk" class="see-source"> See Source <img src="./Images/pop-icon-github.png"></a>
+        </div>
+`;
+
+const detail = document.querySelectorAll('#deskbutton');
+// Create pop up section for desktop
+for (let i = 0; i < detail.length; i++) {
+  detail[i].addEventListener('click', () => {
+    let div2 = document.createElement('div');
+    div2.classList.add = "pop-up-desk";
+    div2.setAttribute("id", "popupdesk");
+    div2.innerHTML = deskworkdetailsSection(i);
+    let container =document.querySelector('.main');
+    let nextdiv =document.querySelector('.deskdiv');
+    container.insertBefore(div2, nextdiv);
+    let deskclose =document.querySelector('.close-desk');
+    deskclose.onclick = function() {
+    div2.style.display="none"
+  }
+      }) 
+     
+  };
+  
