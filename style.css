@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} 
 
 @media (max-width: 767px) {
   .main {
@@ -14,7 +14,7 @@
     position: absolute;
     order: 0;
     left: 0;
-    top: 0;
+    top: 0;   
   }
 
   .toolbar {
@@ -310,7 +310,7 @@
 
   #project {
     order: 5;
-    border-radius: 8px;
+    border-radius: 0px;
   }
 
   .proj {
@@ -405,17 +405,18 @@
   .other-content-link {
     background-color: #ff6b00;
     color: white;
-    padding: 14px 25px;
+    padding: 12px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     position: relative;
-    top: 120px;
+    top: 124px;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
+    border-radius: 0%;
   }
 
   .about {
@@ -693,6 +694,10 @@
     display: none;
   }
 
+  .pop-up-desk{
+    display: none;
+  }
+
   .bottom button:hover {
     cursor: pointer;
     background: #fff5e1;
@@ -807,35 +812,40 @@
     bottom: 0;
   }
 
-  .pop-up-mobile{
+  .pop-up-mobile {
     width: 343px;
     height: 718px;
     background-color: #fff;
-    margin-top: 60px;
+    margin-top: 600px !important;
     margin-left: 16px;
-    z-index: 2;
-    display: non;
+    z-index: 1 !important;
+    display: none;
+    position: absolute;
+    border: solid #5b5957;
 }
 
   .pop-up-header{
+    width: 259px;
+    height: 82px;
     font-family: Roboto, sans-serif;
     Font-style: Bold;
-    Font-size: 22px;
+  
     Line-height: 44px;
     Line-height: 117%;
     Vertical-align: Top;
     margin-left: 16px;
+    margin-top: 76px;
 }
 
 .pop-up-mobile h2 {
-  margin-top: 30px;
+  margin-top: 32px;
   color: #172B4D;
 }
 
-.pop-up-mobile .close {
+.close {
   float: right;
-  margin-top: -25px;
-  margin-right: 30px;
+  margin-top: 0px;
+  margin-right: -30px;
 }
 
 .pop-up-tags {
@@ -851,7 +861,7 @@
   flex-grow: 0;
   align-self: baseline;
   list-style-type: none;
-  margin-top: 65px;
+  margin-top: -20px;
   margin-left: 16px;
 }
 
@@ -867,21 +877,21 @@
 }
 
 .mobile-popup-img {
-  height: 220px;
+  height: 120px;
   width: 311px;
-  left: 16px;
-  margin-top: 24px;
-  border-radius: 0px;
-  margin-left: 16px;
+margin-top: 5px;
+border-radius: 0px;
+margin-left: 16px;
+z-index: 9999;
 }
 
 .popup-description {
   height: 220px;
-width: 318px;
-left: 0px;
-top: 0px;
-border-radius: nullpx;
-margin-left: 16px;
+  width: 318px;
+  left: 16px;
+  margin-top: 0px;
+  border-radius: nullpx;
+  margin-left: 16px;
 
 }
 
@@ -892,6 +902,7 @@ font-weight: 400;
 line-height: 24px;
 letter-spacing: 0em;
 text-align: left;
+margin-top: 138px;
 
 }
 
@@ -942,11 +953,6 @@ text-align: left;
   padding-left: 10px;
 
 }
-
-
-
-
-
 
 
 
@@ -1226,7 +1232,8 @@ text-align: left;
     width: 1185px;
     height: 907px;
     justify-items: flex-start;
-    margin-top: 124px;
+    margin-top: 130px;
+    margin-left: 0px;
   }
 
   .content1-desk {
@@ -1345,7 +1352,7 @@ text-align: left;
     width: 1440px;
     height: 1195px;
     margin-left: -8px;
-    top: 2680px;
+    margin-top: 0px;
     background: url("./Images/desk-bot-back.png") no-repeat #262626;
     background-position: right;
     background-position-y: 99px;
@@ -1570,8 +1577,8 @@ text-align: left;
   .content1-desk button {
     width: 369px;
     height: 58px;
-    margin-left: 0;
-    margin-top: 377px;
+    margin-left: -2.5px;
+    margin-top: 374px;
     border: none;
     background-color: #e05304;
     color: #fff;
@@ -1669,7 +1676,8 @@ text-align: left;
   .other-content-tags li:hover,
   .textblock-tags li:hover,
   .social-media li:hover,
-  .toolbar-desktop ul li:hover {
+  .toolbar-desktop ul li:hover,
+  .pop-up-tags-desk li:hover  {
     background: #e05304;
     cursor: pointer;
   }
@@ -1677,12 +1685,161 @@ text-align: left;
   .content1-desk button:hover,
   .featured button:hover,
   .about-top a:hover,
-  .bottom1 button:hover {
+  .bottom1 button:hover,
+  .see-live:hover,
+  .see-source:hover {
     cursor: pointer;
     background: #fff5e1;
     color: #f55800;
     border: 1px solid #f55800;
   }
+
+  .pop-up-desk {
+    width: 1156px;
+    height: 631px;
+    background-color: #fff;
+    margin-top: 112px;
+    margin-left: 142px;
+    z-index: 1;
+    display: non;
+    position: absolute;
+  }
+  
+  .pop-up-header-desk{
+    
+    margin-left: 24px;
+    width: 1108px;
+    display: flex ;
+    justify-content: space-between;
+    margin-top: -20px;
+  }
+  
+  .pop-up-desk h2 {
+  margin-top: 30px;
+  color: #172B4D;
+  font-family: Crete Round, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  
+  .pop-up-desk .close-desk {
+  float: right;
+  margin-top: 30px;
+  font-size: 35px;
+  
+  }
+  
+  .pop-up-tags-desk {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: 8px;
+  width: 297px;
+  height: 40px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  align-self: baseline;
+  list-style-type: none;
+  margin-top: 12px;
+  margin-left: 24px;
+  }
+  
+  .pop-up-tags-desk > li {
+  background: #fff;
+  border: 1px solid #8993a4;
+  padding: 10px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  }
+  
+  .desk-popup-img {
+  height: 448px;
+  width: 659px;
+  left: 24px;
+  margin-top: 40px;
+  border-radius: 0px;
+  margin-left: 24px;
+  }
+  
+  .popup-description-desk {
+  height: 336px;
+  width: 424px;
+  border-radius: nullpx;
+  margin-left: 708px;
+  margin-top: -450px;
+  float: left;
+  }
+  
+  .popup-description-desk p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  
+  #see-live-desk {
+  background-color: #ff6b00;
+  color: white;
+  text-decoration: none;
+  height: 48px;
+  font-family: Inter;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: -48px;
+  margin-left: 708px;
+  width: 134px;
+  border: none;
+  padding-right: 20px;
+  position: absolute;
+  }
+  
+  #see-live-desk img {
+  position: absolute;
+  margin-top: 1px;
+  padding-left: 10px;
+  
+  }
+  
+  #see-source-desk {
+  background-color: #ff6b00;
+  color: white;
+  text-decoration: none;
+  height: 48px;
+  font-family: Inter;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: -48px;
+  line-height: 24px;
+  width: 159px;
+  margin-left: 849px;
+  border: none;
+  padding-right: 20px;
+  position: absolute;
+  }
+  
+  #see-source-desk img {
+  position: absolute;
+  margin-top: 1px;
+  padding-left: 10px;
+  
+  }
+
+
+
 }
 
 @keyframes color-change {
@@ -1705,4 +1862,8 @@ text-align: left;
   width: 186px;
   height: 72px;
   cursor: pointer;
+}
+
+.work-details-card{
+  display: noe;
 }
