@@ -698,6 +698,10 @@
     display: none;
   }
 
+  .deskdiv {
+    display: none;
+  }
+
   .bottom button:hover {
     cursor: pointer;
     background: #fff5e1;
@@ -771,12 +775,17 @@
     margin-top: 62px;
   }
 
-  .close {
+  .mobileclose {
     font-size: 40px;
     color: #67798e;
+    float: right;
+    margin-right: -30px;
+    color: #67798e;
+    size: 20px;
+    margin-top: -0px;
   }
 
-  .close:hover {
+  .mobileclose:hover {
     color: blue;
   }
 
@@ -1243,7 +1252,7 @@ margin-top: 138px;
     width: 1185px;
     height: 907px;
     justify-items: flex-start;
-    margin-top: 130px;
+    margin-top: 180px;
     margin-left: 0px;
   }
 
@@ -1605,7 +1614,7 @@ margin-top: 138px;
     margin-top: -10px;
   }
 
-  .featured button {
+  .smallbutton {
     width: 124px;
     height: 48px;
     background: #ff6b00;
@@ -1617,7 +1626,7 @@ margin-top: 138px;
     margin-top: 12px;
     border: none;
     margin-left: 710px;
-    transition: width 2s, height 2s;
+    
   }
 
   .bottom1 button {
@@ -1705,14 +1714,13 @@ margin-top: 138px;
     border: 1px solid #f55800;
   }
 
-  .pop-up-desk {
+  #popupdesk {
     width: 1156px;
     height: 631px;
     background-color: #fff;
     margin-top: 112px;
     margin-left: 142px;
     z-index: 1;
-    display: non;
     position: absolute;
   }
   
@@ -1722,13 +1730,13 @@ margin-top: 138px;
     width: 1108px;
     display: flex ;
     justify-content: space-between;
-    margin-top: -20px;
+    margin-top: 24px;
   }
   
   .pop-up-desk h2 {
-  margin-top: 30px;
-  color: #172B4D;
-  font-family: Crete Round, sans-serif;
+    margin-top: 30px;
+    color: #172B4D;
+    font-family: Crete Round, sans-serif;
     font-size: 32px;
     font-weight: 400;
     line-height: 44px;
@@ -1736,10 +1744,10 @@ margin-top: 138px;
     text-align: left;
   }
   
-  .pop-up-desk .close-desk {
+  .close-desk {
   float: right;
-  margin-top: 30px;
-  font-size: 35px;
+  margin-top: -15px;
+  font-size: 45px;
   
   }
   
@@ -1749,7 +1757,7 @@ margin-top: 138px;
   align-items: flex-start;
   padding: 0;
   gap: 8px;
-  width: 297px;
+  width: 294px;
   height: 40px;
   flex: none;
   order: 1;
@@ -1764,6 +1772,7 @@ margin-top: 138px;
   background: #fff;
   border: 1px solid #8993a4;
   padding: 10px;
+  height: 40px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1869,11 +1878,7 @@ margin-top: 138px;
   cursor: pointer;
 }
 
-.featured button:hover {
-  width: 186px;
-  height: 72px;
-  cursor: pointer;
-}
+
 
 .work-details-card{
   display: noe;
