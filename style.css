@@ -765,6 +765,7 @@
 
   .mobileclose:hover {
     color: blue;
+    cursor: pointer;
   }
 
   #menu-list {
@@ -1683,7 +1684,7 @@
     width: 1156px;
     height: 631px;
     background-color: #fff;
-    margin-top: 112px;
+    margin-top: 52px;
     margin-left: 142px;
     z-index: 1;
     position: absolute;
@@ -1712,6 +1713,11 @@
     float: right;
     margin-top: -15px;
     font-size: 45px;
+  }
+
+  .close-desk:hover {
+    color: blue;
+    cursor: pointer;
   }
 
   .pop-up-tags-desk {
@@ -1773,7 +1779,8 @@
     margin-left: 708px;
     width: 134px;
     border: none;
-    padding-right: 20px;
+    padding-right: 25px;
+    padding-top: 10px;
     position: absolute;
   }
 
@@ -1796,7 +1803,8 @@
     width: 159px;
     margin-left: 849px;
     border: none;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-top: 10px;
     position: absolute;
   }
 

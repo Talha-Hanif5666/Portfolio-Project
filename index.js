@@ -12,10 +12,6 @@ const workid = document.querySelector('#works-');
 const worksection = document.querySelector('.mob-html');
 const worksectiondesk = document.querySelector('.desk-html');
 
-
-
-
-
 //Applying HTML for mobile cards
 worksection.innerHTML = `
 <div class="featured">
@@ -188,13 +184,11 @@ menu.onclick = function() {
   menu.style.display = 'none';
 }
 
-
-
  // Create new array of objects for mobile
  const cardDetails = [
   {
     id: 0,
-    title: 'Profesional Art Printing Data',
+    title: 'Profesional Art Printing Data ',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     tecnologies: {
       tech1: 'html',
@@ -203,7 +197,7 @@ menu.onclick = function() {
     },
     live: 'https://talha-hanif5666.github.io/',
     source: 'https://talha-hanif5666.github.io/',
-    img: './Images/Mobile-popup.png',
+    img: './Images/desk1pop.png',
   },
   {
     id: 1,
@@ -216,11 +210,11 @@ menu.onclick = function() {
     },
     live: 'https://talha-hanif5666.github.io/',
     source: 'https://talha-hanif5666.github.io/',
-    img: './Images/Mobile-popup.png',
+    img: './Images/desk2pop.png',
   },
   {
     id: 2,
-    title: 'Profesional Art Printing Data',
+    title: 'Hospital Data Website',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     tecnologies: {
       tech1: 'html',
@@ -229,11 +223,11 @@ menu.onclick = function() {
     },
     live: 'https://talha-hanif5666.github.io/',
     source: 'https://talha-hanif5666.github.io/',
-    img: './Images/Mobile-popup.png',
+    img: './Images/desk3pop.png',
   },
   {
     id: 3,
-    title: 'Profesional Art Printing Data',
+    title: 'Badminton Game Trick Shots',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     tecnologies: {
       tech1: 'html',
@@ -242,11 +236,11 @@ menu.onclick = function() {
     },
     live: 'https://talha-hanif5666.github.io/',
     source: 'https://talha-hanif5666.github.io/',
-    img: './Images/Mobile-popup.png',
+    img: './Images/desk4pop.png',
   },
   {
     id: 4,
-    title: 'Profesional Art Printing Data',
+    title: 'Cricket Score Check',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     tecnologies: {
       tech1: 'html',
@@ -259,7 +253,7 @@ menu.onclick = function() {
   },
   {
     id: 5,
-    title: 'Profesional Art Printing Data',
+    title: 'Data Dashboard Healthcare',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     tecnologies: {
       tech1: 'html',
@@ -268,24 +262,24 @@ menu.onclick = function() {
     },
     live: 'https://talha-hanif5666.github.io/',
     source: 'https://talha-hanif5666.github.io/',
-    img: './Images/Mobile-popup.png',
+    img: './Images/popdesk-bot-back.png',
   },
   {
     id: 6,
-    title: 'Profesional Art Printing Data',
+    title: 'Website Protfolio Project ',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     tecnologies: {
       tech1: 'html',
       tech2: 'bootstrap',
       tech3: 'Ruby',
     },
-    live: 'https://talha-hanif5666.github.io/',
+    live: '2d https://talha-hanif5666.github.io/',
     source: 'https://talha-hanif5666.github.io/',
-    img: './Images/Mobile-popup.png',
+    img: './Images/desk1pop.png',
   },
   {
     id: 7,
-    title: 'Profesional Art Printing Data',
+    title: 'Mobile Portfolio Project',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     tecnologies: {
       tech1: 'html',
@@ -294,7 +288,7 @@ menu.onclick = function() {
     },
     live: 'https://talha-hanif5666.github.io/',
     source: 'https://talha-hanif5666.github.io/',
-    img: './Images/Mobile-popup.png',
+    img: './Images/Work-img1.png',
   },
 ];
 
@@ -322,6 +316,7 @@ const workdetailsSection = (content) => `
       <a href="${cardDetails[content].source}" id="see-source"> See Source <img src="./Images/pop-icon-github.png"></a>  
       </div>
 `;
+
 const details = document.querySelectorAll('#project');
 // Create pop up section for mobile
 for (let i = 0; i < details.length; i++) {
@@ -330,23 +325,21 @@ for (let i = 0; i < details.length; i++) {
     div.classList.add = "pop-up-mobile";
     div.setAttribute("id", "popupmobile");
     div.innerHTML = workdetailsSection(i);
-    let container =document.querySelector('.main');
-    let nextdiv =document.querySelector('.toolbar-desktop');
-    container.insertBefore(div, nextdiv);
-    let mobclose = document.querySelector('.mobileclose');
-    mobclose.onclick = function() {
-    div.style.display="none"
-  }
+    let container =document.querySelector('.popmobdiv');
+    container.appendChild(div);
+    const closedetails = document.querySelector('.mobileclose');
+     closedetails.addEventListener('click', async =>{
+     container.removeChild(div);
+    
       }) 
-     
-  };
+  })};
 
 // Create caard section for desktop
   const deskcardDetails = [
     {
       id: 0,
-      title: 'Profesional Art Printing Data',
-      desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      title: 'Cricket Data And Knowledge',
+      desc: "Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end, each comprising two bails balanced on three stumps. The batting side scores runs by striking the ball bowled at one of the wickets with the bat and then running between the wickets, while the bowling and fielding side tries to prevent this (by preventing the ball from leaving the field, and getting the ball to either wicket) and dismiss each batter ",
       tecnologies: {
         tech1: 'html',
         tech2: 'bootstrap',
@@ -369,59 +362,8 @@ for (let i = 0; i < details.length; i++) {
       source: 'https://talha-hanif5666.github.io/',
       img: './Images/desktop-popup.png',
     },
-    {
-      id: 2,
-      title: 'Profesional Art Printing Data',
-      desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-      tecnologies: {
-        tech1: 'html',
-        tech2: 'bootstrap',
-        tech3: 'Ruby',
-      },
-      live: 'https://talha-hanif5666.github.io/',
-      source: 'https://talha-hanif5666.github.io/',
-      img: './Images/desktop-popup.png',
-    },
-    {
-      id: 3,
-      title: 'Profesional Art Printing Data',
-      desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-      tecnologies: {
-        tech1: 'html',
-        tech2: 'bootstrap',
-        tech3: 'Ruby',
-      },
-      live: 'https://talha-hanif5666.github.io/',
-      source: 'https://talha-hanif5666.github.io/',
-      img: './Images/desktop-popup.png',
-    },
-    {
-      id: 4,
-      title: 'Profesional Art Printing Data',
-      desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-      tecnologies: {
-        tech1: 'html',
-        tech2: 'bootstrap',
-        tech3: 'Ruby',
-      },
-      live: 'https://talha-hanif5666.github.io/',
-      source: 'https://talha-hanif5666.github.io/',
-      img: './Images/desktop-popup.png',
-    },
-    {
-      id: 5,
-      title: 'Profesional Art Printing Data',
-      desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-      tecnologies: {
-        tech1: 'html',
-        tech2: 'bootstrap',
-        tech3: 'Ruby',
-      },
-      live: 'https://talha-hanif5666.github.io/',
-      source: 'https://talha-hanif5666.github.io/',
-      img: './Images/desktop-popup.png',
-    },
   ];
+  
 // Create generic card section for desktop
   const deskworkdetailsSection = (content) => `
 
@@ -456,14 +398,15 @@ for (let i = 0; i < detail.length; i++) {
     div2.classList.add = "pop-up-desk";
     div2.setAttribute("id", "popupdesk");
     div2.innerHTML = deskworkdetailsSection(i);
-    let container =document.querySelector('.main');
-    let nextdiv =document.querySelector('.deskdiv');
-    container.insertBefore(div2, nextdiv);
-    let deskclose =document.querySelector('.close-desk');
-    deskclose.onclick = function() {
-    div2.style.display="none"
-  }
+    let container =document.querySelector('.deskdiv');
+    container.appendChild(div2);
+    const deskclose =document.querySelector('.close-desk');
+    deskclose.addEventListener('click', async =>{
+      container.removeChild(div2);
+  })
       }) 
      
   };
+  
+
   
