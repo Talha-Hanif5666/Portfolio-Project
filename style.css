@@ -1623,6 +1623,7 @@
     color: #fff;
     border: none;
     margin-top: 24px;
+    padding: 10px;
   }
 
   .social-media li {
@@ -1862,4 +1863,16 @@
 
 .work-details-card {
   display: none;
+}
+
+.errortext {
+  color: red;
+  font-size: large;
+  padding: 10px;
+}
+
+.errortext1 {
+  color: red;
+  font-size: 22px;
+  padding: 10px;
 }
