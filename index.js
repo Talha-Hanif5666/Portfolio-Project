@@ -183,7 +183,7 @@ closebtn.onclick = function() {
 menu.onclick = function() {
   menu.style.display = 'none';
 }
-
+ 
  // Create new array of objects for mobile
  const cardDetails = [
   {
@@ -363,7 +363,7 @@ for (let i = 0; i < details.length; i++) {
       img: './Images/desktop-popup.png',
     },
   ];
-  
+
 // Create generic card section for desktop
   const deskworkdetailsSection = (content) => `
 
