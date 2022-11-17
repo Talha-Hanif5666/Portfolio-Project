@@ -408,5 +408,36 @@ for (let i = 0; i < detail.length; i++) {
      
   };
   
+  //Form Validation
+const contactForm = document.querySelector('.bottomform');
+const fullName = document.querySelector('.username');
+const email = document.querySelector('.email');
+const message = document.querySelector('.textarea');
+const validation = document.querySelector('.errortext');
+
+contactForm.addEventListener('submit',(event) =>{
+  const character = /[A-Z]/;
+  const emailValue = email.value;
+  if(character.test(emailValue)){
+    validation.innerHTML = `Your email shouln't contain block letters!`;
+    event.preventDefault();
+  }
+})
+
+ //Form Validation
+ const contactForm1 = document.querySelector('.bottomform1');
+ const fullName1 = document.querySelector('.username1');
+ const email1 = document.querySelector('.email1');
+ const message1 = document.querySelector('.textarea1');
+ const validation1 = document.querySelector('.errortext1');
+ 
+ contactForm1.addEventListener('submit',(event) =>{
+   const character1 = /[A-Z]/;
+   const email1Value = email1.value;
+   if(character1.test(email1Value)){
+     validation1.innerHTML = `Your email shouln't contain block letters!`;
+     event.preventDefault();
+   }
+ })
 
   
