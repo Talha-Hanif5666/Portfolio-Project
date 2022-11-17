@@ -354,7 +354,7 @@ for (let i = 0; i < details.length; i++) {
       title: 'Profesional Art Printing Data',
       desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard" ,
       tecnologies: {
-        tech1: 'htmlee',
+        tech1: 'html',
         tech2: 'bootstrap',
         tech3: 'Ruby',
       },
@@ -374,8 +374,8 @@ for (let i = 0; i < details.length; i++) {
         <div>
           <ul class="pop-up-tags-desk">
             <li>${deskcardDetails[content].tecnologies.tech1}</li>
-            <li>${deskcardDetails[content].tecnologies.tech1}</li>
-            <li>${deskcardDetails[content].tecnologies.tech1}</li>
+            <li>${deskcardDetails[content].tecnologies.tech2}</li>
+            <li>${deskcardDetails[content].tecnologies.tech3}</li>
           </ul>
         </div>
         <div class="desk-popup-img">
