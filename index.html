@@ -9,13 +9,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
-  <title>Portfolio Project</title>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+<title>Portfolio Project</title>
 </head>
 
 <body>
-  <div class="main">
+  <div class="main" id="main-id">
     
-      <nav class="toolbar">
+      <nav class="toolbar" id="toolbar-">
         <div class="placeholder">
           <a id="text">Talha Hanif</a>
         </div>
@@ -35,9 +36,10 @@
           </ul>
         </div>
       </div>
+    <div class="popmobdiv"></div>
+       
 
-
-      <nav class="toolbar-desktop">
+      <nav class="toolbar-desktop" id="toolbar-">
         <div class="placeholder"><a>Talha Hanif</a></div>
         <div class="nav-detail">
           <ul>
@@ -49,9 +51,14 @@
           
         </div> 
       </nav>
+
+    
+
+    <div class="deskdiv"></div>
+     
     
     <section>
-    <div class="headline">
+    <div class="headline" id="headline-">
       <h1 class="primary-text">Hey There. <br> I'm Talha</h1>
       <h2 class="secondary-text">I'am a Software Developer</h2>
       <p class="description">I can help you build a product , feature or website Look through some of my
@@ -73,167 +80,23 @@
   </section>
   </div>
 
-<section>
+<section class="work-section" id="works-">
   <div class="works" id="recent-work">
     <div class="title">
       <h2 id="recent" >My Recent Works</h2>
       <div class="line"><img src="Images\line.png" alt="line.png"></div>
       <div class="line-desktop"><img src="Images\line-desk.png" alt="line-desk.png"></div>
     </div>
-    <div class="frame">
-      <div class="featured">
-        <div class="img"> </div>
-        <div class="img-deskt"><img src="Images\desk-img.png" id="img-deskt" alt=""> </div>
-        <div class="block">
-            <div class="multi"> Multi-Post Stories </div>
-            <div class="sup">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</div>
-        </div>
-        <ul class="textblock-tags">
-          <li>css</li>
-          <li>html</li>
-          <li>bootstrap</li>
-          <li>Ruby</li>
-        </ul>
-        <button class="button" type="submit" value="submit">Get in touch</button>
-        <div class="proj"><a href="#" id="project">
-          <img src="Images\Seeproj.png" alt="proj.png"></a></div>
-      </div>
-      <div class="frame43">
-        <div class="content-defaults content1">
-          <h2 class="other-content-title">Profesional Art Printing Data</h2>
-          <p class="other-content-description">A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard</p>
-          <ul class="other-content-tags">
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-          <a class="other-content-link" href="#" target="_blank">See Project</a>
-        </div>
-        <div class="content-defaults content2">
-          <h2 class="other-content-title">Profesional Art Printing Data</h2>
-          <p class="other-content-description">A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard</p>
-          <ul class="other-content-tags">
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-          <a class="other-content-link" href="#" target="_blank">See Project</a>
-        </div>
-        <div class="content-defaults content3">
-          <h2 class="other-content-title">Profesional Art Printing Data</h2>
-          <p class="other-content-description">A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard</p>
-          <ul class="other-content-tags">
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-          <a class="other-content-link" href="#" target="_blank">See Project</a>
-        </div>
-        <div class="content-defaults content4">
-          <h2 class="other-content-title">Profesional Art Printing Data</h2>
-          <p class="other-content-description">A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard</p>
-          <ul class="other-content-tags">
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-          <a class="other-content-link" href="#" target="_blank">See Project</a>
-        </div>
-        <div class="content-defaults content5">
-          <h2 class="other-content-title">Profesional Art Printing Data</h2>
-          <p class="other-content-description">A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard</p>
-          <ul class="other-content-tags">
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-          <a class="other-content-link" href="#" target="_blank">See Project</a>
-        </div>
-        <div class="content-defaults content6">
-          <h2 class="other-content-title">Profesional Art Printing Data</h2>
-          <p class="other-content-description">A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard</p>
-          <ul class="other-content-tags">
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-          <a class="other-content-link" href="#" target="_blank">See Project</a>
-        </div>
-      </div>
-
-      <div class="frame-desk">
+    <div class="frame" id="work-card">
+       
+      <div id="mobhtml" class="mob-html"></div> 
+      
+<div id="deskhtml" class="desk-html"></div>
+       <div class="frame-desk" id="framedesk">
         
-        <div class="content-defaults-desk content1-desk">
-          <button>See Project</button>
-        </div>
-
-        <div class="content-defaults-desk content2-desk">
-          <h2 class="other-content-title">Data Dashboard <br> Healthcare</h2>
-          <p class="other-content-description">A daily selection of privately
-            personalized reads; no accounts or sign-ups required. has been 
-            the industry's standard</p>
-            <ul class="other-content-tags">
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-        </div>
-
-        <div class="content-defaults-desk content3-desk">
-          <h2 class="other-content-title"> <br> Website Protfolio</h2>
-          <p class="other-content-description">A daily selection of privately
-            personalized reads; no accounts or sign-ups required. has been 
-            the industry's standard</p>
-            <ul class="other-content-tags">
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-        </div>
-
-        <div class="content-defaults-desk content4-desk">
-          <h2 class="other-content-title"> <br> Profesional Art <br> Printing Data More</h2>
-          <p class="other-content-description">A daily selection of privately
-            personalized reads; no accounts or sign-ups required. has been 
-            the industry's standard</p>
-            <ul class="other-content-tags">
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-        </div>
-
-        <div class="content-defaults-desk content5-desk">
-          <h2 class="other-content-title"> <br> Data Dashboard <br>Healthcare</h2>
-          <p class="other-content-description">A daily selection of privately
-            personalized reads; no accounts or sign-ups required. has been 
-            the industry's standard</p>
-            <ul class="other-content-tags">
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-        </div>
-
-        <div class="content-defaults-desk content6-desk">
-          <h2 class="other-content-title"> <br> Data Dashboard <br>Healthcare</h2>
-          <p class="other-content-description">A daily selection of privately
-            personalized reads; no accounts or sign-ups required. has been 
-            the industry's standard</p>
-            <ul class="other-content-tags">
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-        </div>
+       
       </div> 
-   </div>
+    </div>
   </div>
   </section>
 
@@ -331,7 +194,7 @@
               <li>Terminal</li>
               </ul>
             </div>
-          </div>
+          </div> --> --> -->
       </div>
     </div>
 </section>
