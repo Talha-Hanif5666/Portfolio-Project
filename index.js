@@ -106,19 +106,12 @@ worksectiondesk.innerHTML=`
 <div class="frame-desk" id="framedesk">
         
         <div class="content-defaults-desk content1-desk">
-        <a href="#"><button class="bigbutton" id="deskbutton">See Project</button></a>
+        <a href="https://talha-hanif5666.github.io/Todo-list-new/dist/"><button class="bigbutton" id="deskbutton">See Project</button></a>
         </div>
 
         <div class="content-defaults-desk content2-desk">
-          <h2 class="other-content-title">Data Dashboard <br> Healthcare</h2>
-          <p class="other-content-description">A daily selection of privately
-            personalized reads; no accounts or sign-ups required. has been 
-            the industry's standard</p>
-            <ul class="other-content-tags">
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
-            </ul>
+              <a href="https://talha-hanif5666.github.io/Final-project/"><button>See Project</button></a>
+          
         </div>
 
         <div class="content-defaults-desk content3-desk">
