@@ -1005,8 +1005,12 @@
   .nav-detail ul {
     list-style: none;
     width: 255px;
-    height: 40px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-size: 20px;
     display: flex;
+    height: 20px;
     margin-left: 991px;
     margin-top: -18px;
   }
@@ -1243,14 +1247,16 @@
   .content1-desk {
     width: 369px;
     height: 435px;
-    background: url("./Images/desk1.png") no-repeat;
+    background: url("./Images/3.png") no-repeat ;
+    background-size:cover;
     border: solid 3px #262626;
   }
 
   .content2-desk {
     width: 369px;
     height: 435px;
-    background: url("./Images/desk2.png") no-repeat;
+    background: url("./Images/2.png") no-repeat;
+    background-size:cover;
     margin-left: 24px;
   }
 
@@ -1640,7 +1646,20 @@
     font-size: 15px;
     line-height: 20px;
   }
-
+.content2-desk a button {
+  width: 369px;
+  height: 58px;
+  margin-left: 0px;
+  margin-top: 377px;
+  border: none;
+  background-color: #e05304;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
   .other-content-tags li {
     width: fit-content;
     padding: 10px;
@@ -1827,7 +1846,8 @@
   .textblock-tags li:hover,
   .social-media li:hover,
   .pop-up-tags-desk li:hover,
-  .toolbar-desktop ul li:hover {
+  .nav-detail ul li:hover
+   {
     background: #e05304;
     cursor: pointer;
   }
@@ -1837,7 +1857,8 @@
   .about-top a:hover,
   .bottom1 button:hover,
   .see-live:hover,
-  .see-source:hover {
+  .see-source:hover,
+  .content-defaults-desk button:hover {
     cursor: pointer;
     background: #fff5e1;
     color: #f55800;
