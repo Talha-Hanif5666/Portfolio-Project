@@ -655,15 +655,15 @@
   .bottom button:hover {
     cursor: pointer;
     background: #fff5e1;
-    color: #f55800;
-    border: 1px solid #f55800;
+    color: #ff6b00;
+    border: 1px solid #ff6b00;
   }
 
   .bottom button:active {
     cursor: pointer;
-    background: #e05304;
+    background: #ff6b00;
     color: #f4f1f0;
-    border: 1px solid #e05304;
+    border: 1px solid #ff6b00;
   }
 
   .bottom button:disabled {
@@ -918,22 +918,22 @@
   .content-defaults a:hover {
     cursor: pointer;
     background: #fff5e1;
-    color: #f55800;
-    border: 1px solid #f55800;
+    color: #ff6b00;
+    border: 1px solid #ff6b00;
   }
 
   .content-defaults a:active {
     cursor: pointer;
-    background: #e05304;
+    background: #ff6b00;
     color: #f4f1f0;
-    border: 1px solid #e05304;
+    border: 1px solid #ff6b00;
   }
 
   .about-link:hover {
     cursor: pointer;
     background: #fff5e1;
-    color: #f55800;
-    border: 1px solid #f55800;
+    color: #ff6b00;
+    border: 1px solid #ff6b00;
   }
 
   #mlist li {
@@ -1028,7 +1028,7 @@
     font-weight: 400;
     font-size: 72px;
     line-height: 82px;
-    color: #f55800;
+    color: #ff6b00;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -1307,16 +1307,20 @@
   .content3-desk {
     width: 369px;
     height: 435px;
-    background: url("./Images/desk3.png") no-repeat;
+    background: url("./Images/Rent-car.png") no-repeat;
     margin-left: 24px;
+    background-size: 100% 100%;
+    border: solid 3px #262626;
   }
 
   .content4-desk {
-    width: 369px;
+    width: 368px;
     height: 435px;
-    background: url("./Images/desk4.png") no-repeat;
+    background: url("./Images/budget-app.png") no-repeat;
     margin-top: 500px;
     margin-left: -1155px;
+    background-size: 100% 100%;
+    border: solid 3px #262626;
   }
 
   .content4-desk .other-content-title {
@@ -1328,12 +1332,16 @@
   }
 
   .content5-desk {
-    width: 369px;
+    width: 368px;
     height: 435px;
-    background: url("./Images/desk2.png") no-repeat;
+    background: url("./Images/Todo.PNG") no-repeat;
+    background-size: 100% 100%;
     margin-top: 500px;
     margin-left: 24px;
+    border: solid 3px #262626;
   }
+  
+  
 
   .content5-desk .other-content-title {
     margin-top: 130px;
@@ -1349,6 +1357,7 @@
     background: url("./Images/desk3.png") no-repeat;
     margin-top: 500px;
     margin-left: 24px;
+    border: solid 3px #262626;
   }
 
   .content6-desk .other-content-title {
@@ -1385,7 +1394,7 @@
     font-weight: 400;
     font-size: 72px;
     line-height: 82px;
-    color: #f55800;
+    color: #ff6b00;
     margin-top: 130px;
     margin-left: 0;
   }
@@ -1406,7 +1415,7 @@
   .about-link {
     width: 161px;
     height: 48px;
-    background-color: #e05304;
+    background-color: #ff6b00;
     color: #fff;
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -1584,14 +1593,14 @@
     margin-right: 100px;
     margin-top: 20px;
   }
-
-  .content1-desk button {
+  
+  .bigbutton {
     width: 369px;
     height: 58px;
     margin-left: -2.5px;
     margin-top: 374px;
     border: none;
-    background-color: #e05304;
+    background-color: #ff6b00;
     color: #fff;
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -1599,6 +1608,21 @@
     font-size: 17px;
     line-height: 24px;
   }
+
+  /* .content1-desk button {
+    width: 369px;
+    height: 58px;
+    margin-left: -2.5px;
+    margin-top: 374px;
+    border: none;
+    background-color: #ff6b00;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+  } */
 
   .nav-detail a {
     display: flex;
@@ -1622,7 +1646,7 @@
   .bottom1 button {
     width: 131px;
     height: 48px;
-    background: #f55800;
+    background: #ff6b00;
     font-size: 17px;
     font-weight: 700;
     line-height: 24px;
@@ -1647,20 +1671,20 @@
     font-size: 15px;
     line-height: 20px;
   }
-.content2-desk a button {
+/* .content2-desk a button {
   width: 369px;
   height: 58px;
   margin-left: 0px;
   margin-top: 377px;
   border: none;
-  background-color: #e05304;
+  background-color: #ff6b00;
   color: #fff;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-}
+} */
   .other-content-tags li {
     width: fit-content;
     padding: 10px;
@@ -1849,7 +1873,7 @@
   .pop-up-tags-desk li:hover,
   .nav-detail ul li:hover
    {
-    background: #e05304;
+    background: #ff6b00;
     cursor: pointer;
   }
 
@@ -1862,8 +1886,8 @@
   .content-defaults-desk button:hover {
     cursor: pointer;
     background: #fff5e1;
-    color: #f55800;
-    border: 1px solid #f55800;
+    color: #ff6b00;
+    border: 1px solid #ff6b00;
   }
 }
 
