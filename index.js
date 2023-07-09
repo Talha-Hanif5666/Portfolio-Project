@@ -268,20 +268,21 @@ details.forEach((detail) => {
   });
 });
 
+
 // Create caard section for desktop
 const deskcardDetails = [
   {
     id: 0,
-    title: 'Cricket Data And Knowledge',
-    desc: "Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end, each comprising two bails balanced on three stumps. The batting side scores runs by striking the ball bowled at one of the wickets with the bat and then running between the wickets, while the bowling and fielding side tries to prevent this (by preventing the ball from leaving the field, and getting the ball to either wicket) and dismiss each batter ",
+    title: 'Todo List Project',
+    desc: "This is a minimal to-do list used to organize your daily schedule. The system also helps to mark and unmark the completion progress of your daily tasks. It is done for educational purposes.",
     tecnologies: {
       tech1: 'html',
-      tech2: 'bootstrap',
-      tech3: 'Ruby',
+      tech2: 'JavaScript',
+      tech3: 'Css',
     },
-    live: 'https://talha-hanif5666.github.io/',
-    source: 'https://talha-hanif5666.github.io/',
-    img: './Images/desktop-popup.png',
+    live: 'https://talha-hanif5666.github.io/Todo-list-new/dist/',
+    source: 'https://github.com/Talha-Hanif5666/Todo-list-new',
+    img: './Images/3.PNG',
   },
   {
     id: 1,
