@@ -101,41 +101,6 @@ worksection.innerHTML = `
         </div>
         
         `;
-//Applying HTML for desktop cards
-worksectiondesk.innerHTML=`
-<div class="frame-desk" id="framedesk">
-        
-        <div class="content-defaults-desk content1-desk">
-        <a href="https://talha-hanif5666.github.io/Todo-list-new/dist/">
-        <button class="bigbutton" id="deskbutton">See Project</button></a>
-        </div>
-
-        <div class="content-defaults-desk content2-desk">
-              <a href="https://talha-hanif5666.github.io/Final-project/">
-              <button class="bigbutton" id="deskbutton">See Project</button></a>
-        </div>
-
-        <div class="content-defaults-desk content3-desk">
-        <a href="https://talha-hanif5666.github.io/Final-project/">
-        <button class="bigbutton" id="deskbutton">See Project</button></a>
-        </div>
-
-        <div class="content-defaults-desk content4-desk">
-        <a href="https://talha-hanif5666.github.io/Final-project/">
-              <button class="bigbutton" id="deskbutton">See Project</button></a>
-        </div>
-
-        <div class="content-defaults-desk content5-desk">
-        <a href="https://talha-hanif5666.github.io/Final-project/">
-        <button class="bigbutton" id="deskbutton">See Project</button></a>
-        </div>
-
-        <div class="content-defaults-desk content6-desk">
-        <a href="https://talha-hanif5666.github.io/Final-project/">
-        <button class="bigbutton" id="deskbutton">See Project</button></a>
-        </div>
-      </div>
-      `;
 
 //Applying interaction to mobile menu
 button.onclick = function() {
@@ -284,95 +249,215 @@ const workdetailsSection = (content) => `
 `;
 
 const details = document.querySelectorAll('#project');
-// Create pop up section for mobile
-for (let i = 0; i < details.length; i++) {
-  details[i].addEventListener('click', () => {
+
+// Create pop-up section for mobile
+details.forEach((detail) => {
+  detail.addEventListener('click', (event) => {
+    event.preventDefault();
     let div = document.createElement('div');
-    div.classList.add = "pop-up-mobile";
+    div.classList.add("pop-up-mobile");
     div.setAttribute("id", "popupmobile");
-    div.innerHTML = workdetailsSection(i);
-    let container =document.querySelector('.popmobdiv');
+    const index = Array.from(detail.parentNode.parentNode.children).indexOf(detail.parentNode);
+    div.innerHTML = workdetailsSection(index);
+    let container = document.querySelector('.popmobdiv');
     container.appendChild(div);
     const closedetails = document.querySelector('.mobileclose');
-     closedetails.addEventListener('click', async =>{
-     container.removeChild(div);
-    
-      }) 
-  })};
+    closedetails.addEventListener('click', () => {
+      container.removeChild(div);
+    });
+  });
+});
 
 // Create caard section for desktop
-  const deskcardDetails = [
-    {
-      id: 0,
-      title: 'Cricket Data And Knowledge',
-      desc: "Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end, each comprising two bails balanced on three stumps. The batting side scores runs by striking the ball bowled at one of the wickets with the bat and then running between the wickets, while the bowling and fielding side tries to prevent this (by preventing the ball from leaving the field, and getting the ball to either wicket) and dismiss each batter ",
-      tecnologies: {
-        tech1: 'html',
-        tech2: 'bootstrap',
-        tech3: 'Ruby',
-      },
-      live: 'https://talha-hanif5666.github.io/',
-      source: 'https://talha-hanif5666.github.io/',
-      img: './Images/desktop-popup.png',
+const deskcardDetails = [
+  {
+    id: 0,
+    title: 'Cricket Data And Knowledge',
+    desc: "Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end, each comprising two bails balanced on three stumps. The batting side scores runs by striking the ball bowled at one of the wickets with the bat and then running between the wickets, while the bowling and fielding side tries to prevent this (by preventing the ball from leaving the field, and getting the ball to either wicket) and dismiss each batter ",
+    tecnologies: {
+      tech1: 'html',
+      tech2: 'bootstrap',
+      tech3: 'Ruby',
     },
-    {
-      id: 1,
-      title: 'Profesional Art Printing Data',
-      desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard" ,
-      tecnologies: {
-        tech1: 'html',
-        tech2: 'bootstrap',
-        tech3: 'Ruby',
-      },
-      live: 'https://talha-hanif5666.github.io/',
-      source: 'https://talha-hanif5666.github.io/',
-      img: './Images/desktop-popup.png',
+    live: 'https://talha-hanif5666.github.io/',
+    source: 'https://talha-hanif5666.github.io/',
+    img: './Images/desktop-popup.png',
+  },
+  {
+    id: 1,
+    title: 'Profesional Art Printing Data',
+    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard" ,
+    tecnologies: {
+      tech1: 'html',
+      tech2: 'bootstrap',
+      tech3: 'Ruby',
     },
-  ];
+    live: 'https://talha-hanif5666.github.io/',
+    source: 'https://talha-hanif5666.github.io/',
+    img: './Images/desktop-popup.png',
+  },
+  {
+    id: 2,
+    title: 'Profesional Art Printing Data',
+    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard" ,
+    tecnologies: {
+      tech1: 'html',
+      tech2: 'bootstrap',
+      tech3: 'Ruby',
+    },
+    live: 'https://talha-hanif5666.github.io/',
+    source: 'https://talha-hanif5666.github.io/',
+    img: './Images/desktop-popup.png',
+  },
+  {
+    id: 3,
+    title: 'Profesional Art Printing Data',
+    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard" ,
+    tecnologies: {
+      tech1: 'html',
+      tech2: 'bootstrap',
+      tech3: 'Ruby',
+    },
+    live: 'https://talha-hanif5666.github.io/',
+    source: 'https://talha-hanif5666.github.io/',
+    img: './Images/desktop-popup.png',
+  },
+  {
+    id: 4,
+    title: 'Profesional Art Printing Data',
+    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard" ,
+    tecnologies: {
+      tech1: 'html',
+      tech2: 'bootstrap',
+      tech3: 'Ruby',
+    },
+    live: 'https://talha-hanif5666.github.io/',
+    source: 'https://talha-hanif5666.github.io/',
+    img: './Images/desktop-popup.png',
+  },
+  {
+    id: 5,
+    title: 'Profesional Art Printing Data',
+    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard" ,
+    tecnologies: {
+      tech1: 'html',
+      tech2: 'bootstrap',
+      tech3: 'Ruby',
+    },
+    live: 'https://talha-hanif5666.github.io/',
+    source: 'https://talha-hanif5666.github.io/',
+    img: './Images/desktop-popup.png',
+  },
+  {
+    id: 6,
+    title: 'Profesional Art Printing Data',
+    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard" ,
+    tecnologies: {
+      tech1: 'html',
+      tech2: 'bootstrap',
+      tech3: 'Ruby',
+    },
+    live: 'https://talha-hanif5666.github.io/',
+    source: 'https://talha-hanif5666.github.io/',
+    img: './Images/desktop-popup.png',
+  },
+  {
+    id: 7,
+    title: 'Profesional Art Printing Data',
+    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard" ,
+    tecnologies: {
+      tech1: 'html',
+      tech2: 'bootstrap',
+      tech3: 'Ruby',
+    },
+    live: 'https://talha-hanif5666.github.io/',
+    source: 'https://talha-hanif5666.github.io/',
+    img: './Images/desktop-popup.png',
+  }
+];
 
-// Create generic card section for desktop
-  const deskworkdetailsSection = (content) => `
-
-  <div class="pop-up-header-desk">
-          <h2>${deskcardDetails[content].title}</h2>
-          <span class="close-desk" id="close-desk-">&times;</span>
-        </div>
-        <div>
-          <ul class="pop-up-tags-desk">
-            <li>${deskcardDetails[content].tecnologies.tech1}</li>
-            <li>${deskcardDetails[content].tecnologies.tech2}</li>
-            <li>${deskcardDetails[content].tecnologies.tech3}</li>
-          </ul>
-        </div>
-        <div class="desk-popup-img">
-        <img src="${deskcardDetails[content].img}" alt="popup-img.png">
-        </div>
-        <div class="popup-description-desk">
-          <p>${deskcardDetails[content].desc}</p>
-        </div>
-        <div class="popup-buttons-desk">
-        <a href="${deskcardDetails[content].live}" id="see-live-desk" class="see-live">See Live <img src="./Images/mob-popup.png"></a>
-        <a href="${deskcardDetails[content].source}" id="see-source-desk" class="see-source"> See Source <img src="./Images/pop-icon-github.png"></a>
-        </div>
+// Applying HTML for desktop cards
+worksectiondesk.innerHTML = `
+<div class="frame-desk" id="framedesk">
+  <div class="content-defaults-desk content1-desk">
+    <a href="#">
+      <button class="bigbutton deskbutton" type="button">See Project</button>
+    </a>
+  </div>
+  <div class="content-defaults-desk content2-desk">
+    <a href="#">
+      <button class="bigbutton deskbutton">See Project</button>
+    </a>
+  </div>
+  <div class="content-defaults-desk content3-desk">
+    <a href="#">
+      <button class="bigbutton deskbutton">See Project</button>
+    </a>
+  </div>
+  <div class="content-defaults-desk content4-desk">
+    <a href="#">
+      <button class="bigbutton deskbutton">See Project</button>
+    </a>
+  </div>
+  <div class="content-defaults-desk content5-desk">
+    <a href="#">
+      <button class="bigbutton deskbutton">See Project</button>
+    </a>
+  </div>
+  <div class="content-defaults-desk content6-desk">
+    <a href="#">
+      <button class="bigbutton deskbutton">See Project</button>
+    </a>
+  </div>
+</div>
 `;
 
-const detail = document.querySelectorAll('#deskbutton');
-// Create pop up section for desktop
-for (let i = 0; i < detail.length; i++) {
-  detail[i].addEventListener('click', () => {
+// Create generic card section for desktop
+const deskworkdetailsSection = (content) => `
+  <div class="pop-up-header-desk">
+    <h2>${deskcardDetails[content].title}</h2>
+    <span class="close-desk" id="close-desk-${content}">&times;</span>
+  </div>
+  <div>
+    <ul class="pop-up-tags-desk">
+      <li>${deskcardDetails[content].tecnologies.tech1}</li>
+      <li>${deskcardDetails[content].tecnologies.tech2}</li>
+      <li>${deskcardDetails[content].tecnologies.tech3}</li>
+    </ul>
+  </div>
+  <div class="desk-popup-img">
+    <img src="${deskcardDetails[content].img}" alt="popup-img.png">
+  </div>
+  <div class="popup-description-desk">
+    <p>${deskcardDetails[content].desc}</p>
+  </div>
+  <div class="popup-buttons-desk">
+    <a href="${deskcardDetails[content].live}" class="see-live">See Live <img src="./Images/mob-popup.png"></a>
+    <a href="${deskcardDetails[content].source}" class="see-source">See Source <img src="./Images/pop-icon-github.png"></a>
+  </div>
+`;
+
+const deskDetailButtons = document.querySelectorAll('.deskbutton');
+
+// Create pop-up section for desktop
+deskDetailButtons.forEach((button, index) => {
+  button.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevents the default link behavior
     let div2 = document.createElement('div');
-    div2.classList.add = "pop-up-desk";
-    div2.setAttribute("id", "popupdesk");
-    div2.innerHTML = deskworkdetailsSection(i);
-    let container =document.querySelector('.deskdiv');
+    div2.classList.add("pop-up-desk");
+    div2.setAttribute("id", `popupdesk-${index}`);
+    div2.innerHTML = deskworkdetailsSection(index);
+    let container = document.querySelector('.deskdiv');
     container.appendChild(div2);
-    const deskclose =document.querySelector('.close-desk');
-    deskclose.addEventListener('click', async =>{
+    const deskClose = document.querySelector(`#close-desk-${index}`);
+    deskClose.addEventListener('click', () => {
       container.removeChild(div2);
-  })
-      }) 
-     
-  };
+    });
+  });
+});
+
+
+
   
   //Form Validation
 const contactForm = document.querySelector('.bottomform');
