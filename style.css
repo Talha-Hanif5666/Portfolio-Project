@@ -1725,7 +1725,7 @@
     margin-bottom: 30px;
   }
 
-  #popupdesk {
+  .pop-up-desk {
     width: 1156px;
     height: 631px;
     background-color: #fff;
@@ -1789,6 +1789,7 @@
     margin-top: 40px;
     border-radius: 0;
     margin-left: 24px;
+    background-size: cover;
   }
 
   .popup-description-desk {
