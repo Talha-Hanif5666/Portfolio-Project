@@ -14,7 +14,7 @@ const worksectiondesk = document.querySelector('.desk-html');
 
 //Applying HTML for mobile cards
 worksection.innerHTML = `
-<div class="featured">
+<div class="featured-mob">
 <div class="img"> </div>
 <div class="img-deskt"><img src="./Images/desk-img.png" id="img-deskt" alt=""> </div>
 <div class="block">
@@ -27,10 +27,8 @@ worksection.innerHTML = `
   <li>bootstrap</li>
   <li>Ruby</li>
 </ul>
-<a href="#main-id"><button class="smallbutton" id="deskbutton" type="submit" value="submit">See Project</button></a>
-        <div class="proj" id="project"><a href="#" id="project">
-          <img src="./Images/Seeproj.png" alt="proj.png"></a></div>
-      </div>
+<button class="smallbutton-mob">See Project</button>
+</div>
       <div class="frame43">
         <div class="content-defaults content1">
           <h2 class="other-content-title">Profesional Art Printing Data</h2>
@@ -98,7 +96,7 @@ worksection.innerHTML = `
           </ul>
           <a class="other-content-link" id="project" href="#toolbar-" >See Project</a>
         </div>
-        </div>
+      
         
         `;
 
@@ -119,73 +117,73 @@ menu.onclick = function() {
  const cardDetails = [
   {
     id: 0,
-    title: 'Profesional Art Printing Data ',
-    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    title: 'Todo List Project',
+    desc: "This is a minimal to-do list used to organize your daily schedule. The system also helps to mark and unmark the completion progress of your daily tasks. It is done for educational purposes.",
     tecnologies: {
       tech1: 'html',
-      tech2: 'bootstrap',
-      tech3: 'Ruby',
+      tech2: 'JavaScript',
+      tech3: 'Css',
     },
-    live: 'https://talha-hanif5666.github.io/',
-    source: 'https://talha-hanif5666.github.io/',
-    img: './Images/desk1pop.png',
+    live: 'https://talha-hanif5666.github.io/Todo-list-new/dist/',
+    source: 'https://github.com/Talha-Hanif5666/Todo-list-new',
+    img: './Images/3.png',
   },
   {
     id: 1,
-    title: 'Profesional Art Printing Data',
-    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard" ,
+    title: 'Web Development Global Summit',
+    desc: "Web Development Course is my HTML, CSS, and JS capstone project. It is about a web development course where people can visit the site to learn more about it and invite others." ,
     tecnologies: {
-      tech1: 'htmlee',
-      tech2: 'bootstrap',
-      tech3: 'Ruby',
+      tech1: 'html',
+      tech2: 'JavaScript',
+      tech3: 'Css',
     },
-    live: 'https://talha-hanif5666.github.io/',
-    source: 'https://talha-hanif5666.github.io/',
-    img: './Images/desk2pop.png',
+    live: 'https://talha-hanif5666.github.io/Final-project/',
+    source: 'https://github.com/Talha-Hanif5666/Final-project',
+    img: './Images/2.png',
   },
   {
     id: 2,
-    title: 'Hospital Data Website',
-    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    title: 'RENTCAR Web App',
+    desc: "RENTCAR is a collaborative project, it's about luxury car rental platform built with Rails and React. Users can browse and reserve available models, manage reservations, and contribute by adding or deleting cars. It offers a seamless experience for renting luxury cars with ease." ,
     tecnologies: {
-      tech1: 'html',
-      tech2: 'bootstrap',
+      tech1: 'React',
+      tech2: 'Rails',
       tech3: 'Ruby',
     },
-    live: 'https://talha-hanif5666.github.io/',
-    source: 'https://talha-hanif5666.github.io/',
-    img: './Images/desk3pop.png',
+    live: 'https://capstone-rails.onrender.com/login',
+    source: 'https://github.com/Talha-Hanif5666/capstone-rails',
+    img: './Images/Rent-car.png',
   },
   {
     id: 3,
-    title: 'Badminton Game Trick Shots',
-    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    title: 'Budget App',
+    desc: "Budget App is an application that One can create categories for all their transaction, view total cost of all categories, view the cost of one transaction." ,
     tecnologies: {
-      tech1: 'html',
-      tech2: 'bootstrap',
-      tech3: 'Ruby',
+      tech1: 'Ruby',
+      tech2: 'Ruby on Rails',
+      tech3: 'Css',
     },
-    live: 'https://talha-hanif5666.github.io/',
-    source: 'https://talha-hanif5666.github.io/',
-    img: './Images/desk4pop.png',
+    live: 'https://ror-capstone-project.onrender.com/',
+    source: 'https://github.com/Talha-Hanif5666/Budget-App',
+    img: './Images/budget-app.png',
   },
   {
     id: 4,
-    title: 'Cricket Score Check',
-    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    title: 'Awesome books Project',
+    desc: "Awesome books Project is about creating a library of books. where a user can add a book title and author or delete it." ,
     tecnologies: {
       tech1: 'html',
-      tech2: 'bootstrap',
-      tech3: 'Ruby',
+      tech2: 'React',
+      tech3: 'JavaScript',
     },
-    live: 'https://talha-hanif5666.github.io/',
-    source: 'https://talha-hanif5666.github.io/',
-    img: './Images/Mobile-popup.png',
+    live: 'https://talha-hanif5666.github.io/Awesomebooks-new/',
+    source: 'https://github.com/Talha-Hanif5666/Awesomebooks-new',
+    img: './Images/Todo.PNG',
   },
   {
     id: 5,
-    title: 'Data Dashboard Healthcare',
-    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    title: 'Profesional Art Printing Data',
+    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard" ,
     tecnologies: {
       tech1: 'html',
       tech2: 'bootstrap',
@@ -193,25 +191,12 @@ menu.onclick = function() {
     },
     live: 'https://talha-hanif5666.github.io/',
     source: 'https://talha-hanif5666.github.io/',
-    img: './Images/popdesk-bot-back.png',
+    img: './Images/',
   },
   {
     id: 6,
-    title: 'Website Protfolio Project ',
-    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    tecnologies: {
-      tech1: 'html',
-      tech2: 'bootstrap',
-      tech3: 'Ruby',
-    },
-    live: '2d https://talha-hanif5666.github.io/',
-    source: 'https://talha-hanif5666.github.io/',
-    img: './Images/desk1pop.png',
-  },
-  {
-    id: 7,
-    title: 'Mobile Portfolio Project',
-    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    title: 'Profesional Art Printing Data',
+    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard" ,
     tecnologies: {
       tech1: 'html',
       tech2: 'bootstrap',
@@ -219,8 +204,21 @@ menu.onclick = function() {
     },
     live: 'https://talha-hanif5666.github.io/',
     source: 'https://talha-hanif5666.github.io/',
-    img: './Images/Work-img1.png',
+    img: './Images/desktop-popup.png',
   },
+  {
+    id: 7,
+    title: 'Profesional Art Printing Data',
+    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard" ,
+    tecnologies: {
+      tech1: 'html',
+      tech2: 'bootstrap',
+      tech3: 'Ruby',
+    },
+    live: 'https://talha-hanif5666.github.io/',
+    source: 'https://talha-hanif5666.github.io/',
+    img: './Images/desktop-popup.png',
+  }
 ];
 
 // Create pop up section for mob
@@ -379,6 +377,21 @@ const deskcardDetails = [
 
 // Applying HTML for desktop cards
 worksectiondesk.innerHTML = `
+<div class="featured-desk">
+<div class="img"> </div>
+<div class="img-deskt"><img src="./Images/desk-img.png" id="img-deskt" alt=""> </div>
+<div class="block">
+    <div class="multi"> Multi-Post Stories </div>
+    <div class="sup">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</div>
+</div>
+<ul class="textblock-tags">
+  <li>css</li>
+  <li>html</li>
+  <li>bootstrap</li>
+  <li>Ruby</li>
+</ul>
+<a href="#main-id"><button class="smallbutton" id="project" type="submit" value="submit">See Project</button></a>
+</div>
 <div class="frame-desk" id="framedesk">
   <div class="content-defaults-desk content1-desk">
     <a href="#">

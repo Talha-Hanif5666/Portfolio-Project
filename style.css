@@ -218,11 +218,12 @@
     bottom: 50px;
   }
 
-  .featured {
+  .featured-mob {
     justify-content: center;
     gap: 24px;
     width: 375px;
     height: 568px;
+    margin-top: -80px;
   }
 
   .img {
@@ -338,7 +339,7 @@
     height: 2436px;
     position: relative;
     left: 20px;
-    margin-top: 12px;
+    margin-top: 22px;
   }
 
   .content-defaults {
@@ -616,6 +617,20 @@
     border: none;
   }
 
+  .smallbutton-mob {
+    width: 124px;
+    height: 48px;
+    background: #ff6b00;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    font-style: normal;
+    color: #fff;
+    margin-top: 12px;
+    border: none;
+  margin-left: 20px;
+  }
+
   .toolbar-desktop {
     display: none;
   }
@@ -652,12 +667,22 @@
     display: none;
   }
 
-  .bottom button:hover {
+  .smallbutton {
+    display: none;
+  }
+
+  .featured-desk {
+    display: none;
+  }
+  .featured-mob button:hover,
+  .bottom button:hover,
+  .smallbutton-mob:hover {
     cursor: pointer;
     background: #fff5e1;
     color: #ff6b00;
     border: 1px solid #ff6b00;
   }
+  
 
   .bottom button:active {
     cursor: pointer;
@@ -1153,6 +1178,10 @@
   }
 
   .pop-up-mobile {
+    display: none;
+  }
+
+  .featured-mob {
     display: none;
   }
 
