@@ -1950,8 +1950,9 @@
     margin-left: 24px;
   }
 
-  .desk-popup-img {
-    
+  .desk-popup-img img {
+    width:500px;
+    height: 400px;
     margin-top: 10px;
     border-radius: 0;
     margin-left: 20px;
@@ -1962,8 +1963,8 @@
     height: 336px;
     width: 424px;
     border-radius: nullpx;
-    margin-left: 708px;
-    margin-top: -450px;
+    margin-left: 558px;
+    margin-top: -400px;
     float: left;
   }
 
@@ -2002,6 +2003,7 @@
     line-height: 44px;
     letter-spacing: 0;
     text-align: left;
+    margin-left: 20px;
   }
 .pop-up-desk {
   position: fixed;
