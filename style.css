@@ -1725,7 +1725,7 @@
     margin-bottom: 30px;
   }
 
-  .pop-up-desk {
+  /* .pop-up-desk {
     width: 1156px;
     height: 631px;
     background-color: #fff;
@@ -1847,7 +1847,6 @@
     line-height: 24px;
     margin-top: -48px;
     width: 159px;
-    margin-left: 849px;
     border: none;
     padding-left: 15px;
     padding-top: 10px;
@@ -1858,7 +1857,199 @@
     position: absolute;
     margin-top: 1px;
     padding-left: 10px;
+  } */
+
+  /* Popup container */
+
+.see-live {
+    background-color: #ff6b00;
+    color: white;
+    text-decoration: none;
+    height: 48px;
+    font-family: Inter, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-top: -48px;
+    margin-left: 180px;
+    width: 134px;
+    border: none;
+    padding-right: 25px;
+    padding-top: 10px;
+    position: absolute;
   }
+
+  .see-live img {
+    position: absolute;
+    margin-top: 1px;
+    padding-left: 10px;
+  }
+
+  .see-source {
+    background-color: #ff6b00;
+    color: white;
+    text-decoration: none;
+    height: 48px;
+    font-family: Inter, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: -48px;
+    width: 159px;
+    border: none;
+    padding-left: 15px;
+    padding-top: 10px;
+    position: absolute;
+  }
+
+  .see-source img {
+    position: absolute;
+    margin-top: 1px;
+    padding-left: 10px;
+  }
+
+
+  .container-popup-desk {
+    background-color: wheat;
+    width: 90%;
+    height: 90%;
+  }
+    .close-desk {
+    font-size: 45px;
+    margin-left: 80%;
+    margin-bottom: 50px;
+    position: absolute;
+  }
+
+  .close-desk:hover {
+    color: blue;
+    cursor: pointer;
+  }
+
+  .popup-buttons-desk {
+    position: absolute;
+    margin-top: 28%;
+    margin-left: 40%;
+  }
+  .pop-up-tags-desk {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 8px;
+    width: 294px;
+    height: 40px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    align-self: baseline;
+    list-style-type: none;
+    margin-top: 12px;
+    margin-left: 24px;
+  }
+
+  .desk-popup-img {
+    
+    margin-top: 10px;
+    border-radius: 0;
+    margin-left: 20px;
+   
+    float: left;
+  }
+  .popup-description-desk {
+    height: 336px;
+    width: 424px;
+    border-radius: nullpx;
+    margin-left: 708px;
+    margin-top: -450px;
+    float: left;
+  }
+
+  .popup-description-desk p {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+ 
+  
+  .pop-up-tags-desk {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 8px;
+    width: 294px;
+    height: 40px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    align-self: baseline;
+    list-style-type: none;
+    margin-top: 12px;
+    margin-left: 24px;
+  }
+    .pop-up-desk h2 {
+    margin-top: 30px;
+    color: #172b4d;
+    font-family: Crete Round, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+.pop-up-desk {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Popup content */
+.pop-up-desk-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* Close button */
+.pop-up-desk-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Styling for the scrollbar */
+.pop-up-desk-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.pop-up-desk-content::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.pop-up-desk-content::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
 
   .placeholder a:hover,
   .about-bottom-subtopic h1:hover,
