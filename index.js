@@ -415,6 +415,7 @@ worksectiondesk.innerHTML = `
 
 // Create generic card section for desktop
 const deskworkdetailsSection = (content) => `
+<div class="container-popup-desk">
   <div class="pop-up-header-desk">
     <h2>${deskcardDetails[content].title}</h2>
     <span class="close-desk" id="close-desk-${content}">&times;</span>
@@ -435,7 +436,7 @@ const deskworkdetailsSection = (content) => `
   <div class="popup-buttons-desk">
     <a href="${deskcardDetails[content].live}" class="see-live">See Live <img src="./Images/mob-popup.png"></a>
     <a href="${deskcardDetails[content].source}" class="see-source">See Source <img src="./Images/pop-icon-github.png"></a>
-  </div>
+  </div></div>
 `;
 
 const deskDetailButtons = document.querySelectorAll('.deskbutton');
