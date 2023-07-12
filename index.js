@@ -12,6 +12,19 @@ const workid = document.querySelector('#works-');
 const worksection = document.querySelector('.mob-html');
 const worksectiondesk = document.querySelector('.desk-html');
 
+function downloadResume() {
+  var resumeUrl = './Images/Muhammad_Talha_Resume.pdf'; // Replace with the actual path to your resume PDF file
+
+  var link = document.createElement('a');
+  link.href = resumeUrl;
+  link.download = './Images/Muhammad_Talha_Resume.pdf';
+  link.target = '_blank';
+
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
 //Applying HTML for mobile cards
 worksection.innerHTML = `
 <div class="featured-mob">
