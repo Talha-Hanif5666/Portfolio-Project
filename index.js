@@ -40,7 +40,7 @@ worksection.innerHTML = `
   <li>bootstrap</li>
   <li>Ruby</li>
 </ul>
-<button class="smallbutton-mob">See Project</button>
+<button class="smallbutton-mob" id="project">See Project</button>
 </div>
       <div class="frame43">
         <div class="content-defaults content1">
@@ -403,7 +403,7 @@ worksectiondesk.innerHTML = `
   <li>bootstrap</li>
   <li>Ruby</li>
 </ul>
-<a href="#main-id"><button class="smallbutton" id="project" type="submit" value="submit">See Project</button></a>
+<a href="#main-id"><button class="smallbutton deskbutton" id="project" type="submit" value="submit">See Project</button></a>
 </div>
 <div class="frame-desk" id="framedesk">
   <div class="content-defaults-desk content1-desk">

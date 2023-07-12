@@ -801,10 +801,8 @@
     width: 343px;
     height: 718px;
     background-color: #fff;
-    margin-top: 600px !important;
-    margin-left: 32px;
     z-index: 1 !important;
-    position: absolute;
+    position: fixed;
     border: solid #5b5957;
   }
 
@@ -817,12 +815,7 @@
     line-height: 44px;
     line-height: 117%;
     vertical-align: top;
-    margin-top: 76px;
-  }
-
-  .pop-up-mobile h2 {
-    margin-top: 32px;
-    color: #172b4d;
+    margin-top: 20px;
   }
 
   .close {
@@ -844,13 +837,13 @@
     flex-grow: 0;
     align-self: baseline;
     list-style-type: none;
-    margin-top: -30px;
+    margin-top: -40px;
     margin-left: 32px;
   }
 
-  .mobile-popup-img {
-    height: 120px;
-    width: 311px;
+  .mobile-popup-img img {
+    height: 320px;
+    width: 271px;
     margin-top: 10px;
     border-radius: 0;
     margin-left: 32px;
@@ -859,7 +852,7 @@
 
   .popup-description {
     height: 220px;
-    width: 318px;
+    width: 310px;
     left: 16px;
     margin-top: 0;
     border-radius: nullpx;
@@ -873,13 +866,12 @@
     line-height: 24px;
     letter-spacing: 0;
     text-align: left;
-    margin-top: 138px;
+    margin-top: 10
   }
-
   .popup-buttons {
-    margin-top: -40px;
+    margin-top: 65px;
     display: flex;
-    margin-left: 16px;
+    margin-left: -3px;
   }
 
   #see-live {
@@ -1027,7 +1019,7 @@
     width: 120px;
   }
 
-  .nav-detail ul {
+  .nav-detail ul{
     list-style: none;
     width: 255px;
     font-weight: 700;
@@ -1038,6 +1030,19 @@
     height: 20px;
     margin-left: 991px;
     margin-top: -18px;
+    text-decoration: none;
+  }
+
+  .nav-detail ul a{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    margin-top: 1px;
+    margin-left: 20px;
+  }
+
+  .nav-detail ul a img{
+    margin-top: -10px;
   }
 
   .headline {
@@ -2093,10 +2098,14 @@
   .other-content-tags li:hover,
   .textblock-tags li:hover,
   .social-media li:hover,
-  .pop-up-tags-desk li:hover,
-  .nav-detail ul li:hover
+  .pop-up-tags-desk li:hover
    {
     background: #ff6b00;
+    cursor: pointer;
+  }
+
+  .nav-detail ul li a:hover {
+    color: #ff6b00;
     cursor: pointer;
   }
 
@@ -2121,6 +2130,21 @@
 
   to {
     color: red;
+  }
+}
+
+.placeholder,
+ #text {
+  animation: rotate 1s linear 2s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
 
