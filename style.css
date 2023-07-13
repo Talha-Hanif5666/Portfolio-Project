@@ -1995,10 +1995,11 @@
   }
 
   .popup-buttons-desk {
-    position: absolute;
-    margin-top: 28%;
-    margin-left: 40%;
+    position: fixed;
+    margin-left: 560px;
+    margin-top: 60px;
   }
+
   .pop-up-tags-desk {
     display: flex;
     flex-direction: row;
