@@ -831,6 +831,7 @@
   .pop-up-mobile {
     width: 343px;
     height: 608px;
+    margin-top: 300px;
     background-color: #fff;
     z-index: 1 !important;
     position: fixed;
