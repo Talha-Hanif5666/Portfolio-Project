@@ -836,6 +836,7 @@
     z-index: 1 !important;
     position: fixed;
     border: solid #5b5957;
+    margin-left: 15px;
   }
 
   .pop-up-header {
