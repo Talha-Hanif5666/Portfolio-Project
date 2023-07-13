@@ -830,7 +830,7 @@
 
   .pop-up-mobile {
     width: 343px;
-    height: 718px;
+    height: 608px;
     background-color: #fff;
     z-index: 1 !important;
     position: fixed;
@@ -873,8 +873,8 @@
   }
 
   .mobile-popup-img img {
-    height: 320px;
-    width: 271px;
+    height: 170px;
+    width: 231px;
     margin-top: 10px;
     border-radius: 0;
     margin-left: 32px;
@@ -900,7 +900,7 @@
     margin-top: 10
   }
   .popup-buttons {
-    margin-top: 65px;
+    margin-top: 105px;
     display: flex;
     margin-left: -3px;
   }
@@ -2022,17 +2022,16 @@
     margin-top: 10px;
     border-radius: 0;
     margin-left: 20px;
-   
     float: left;
   }
-  .popup-description-desk {
-    height: 336px;
-    width: 424px;
-    border-radius: nullpx;
-    margin-left: 558px;
-    margin-top: -400px;
-    float: left;
-  }
+ 
+.popup-description-desk {
+  height: auto; /* Adjust the height to fit the content */
+  width: 424px;
+  border-radius: nullpx;
+  margin-left: 558px;
+  margin-top: 10px; /* Adjust the margin as needed */
+}
 
   .popup-description-desk p {
     font-family: Inter, sans-serif;
