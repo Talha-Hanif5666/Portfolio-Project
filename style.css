@@ -352,12 +352,12 @@
   }
 
   .content1 {
-    background: url("./Images/Todolist.PNG") no-repeat;
+    background: url("./Images/Todolist.png") no-repeat;
     background-color: #f4f5f7;
     background-size: cover;
   }
   .content2 {
-    background: url("./Images/web-summit.PNG") no-repeat;
+    background: url("./Images/web-summit.png") no-repeat;
     background-color: #f4f5f7;
     background-size: cover;
   }
@@ -1316,7 +1316,7 @@
   .content1-desk {
     width: 369px;
     height: 435px;
-    background: url("./Images/Todolist.PNG") no-repeat ;
+    background: url("./Images/Todolist.png") no-repeat ;
     background-size:cover;
     border: solid 3px #262626;
   }
@@ -1324,7 +1324,7 @@
   .content2-desk {
     width: 369px;
     height: 435px;
-    background: url("./Images/web-summit.PNG") no-repeat;
+    background: url("./Images/web-summit.png") no-repeat;
     background-size:cover;
     margin-left: 24px;
     border: solid 3px #262626;
