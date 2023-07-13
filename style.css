@@ -352,7 +352,7 @@
   }
 
   .content1 {
-    background: url("./Images/Todolist.png") no-repeat;
+    background: url("./Images/toodolist.png") no-repeat;
     background-color: #f4f5f7;
     background-size: cover;
   }
@@ -1316,7 +1316,7 @@
   .content1-desk {
     width: 369px;
     height: 435px;
-    background: url("./Images/Todolist.png") no-repeat ;
+    background: url("./Images/toodolist.png") no-repeat ;
     background-size:cover;
     border: solid 3px #262626;
   }
