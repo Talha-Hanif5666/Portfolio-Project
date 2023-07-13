@@ -86,7 +86,7 @@ menu.onclick = function() {
     },
     live: 'https://talha-hanif5666.github.io/Final-project/',
     source: 'https://github.com/Talha-Hanif5666/Final-project',
-    img: './Images/Web-summit.png',
+    img: './Images/web-summit.png',
   },
   {
     id: 2,
@@ -240,7 +240,7 @@ const deskcardDetails = [
     },
     live: 'https://talha-hanif5666.github.io/Final-project/',
     source: 'https://github.com/Talha-Hanif5666/Final-project',
-    img: './Images/Web-summit.png',
+    img: './Images/web-summit.png',
   },
   {
     id: 2,
