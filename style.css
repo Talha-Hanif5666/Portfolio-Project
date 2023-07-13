@@ -7,7 +7,7 @@
 @media (max-width: 767px) {
   .main {
     width: 375px;
-    height: 6522px;
+    height: 3522px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -339,7 +339,7 @@
     height: 2436px;
     position: relative;
     left: 20px;
-    margin-top: 22px;
+    margin-top: -220px;
   }
 
   .content-defaults {
@@ -349,6 +349,37 @@
     height: 386px;
     background: url("./Images/Img-Placeholder.png") no-repeat;
     background-color: #f4f5f7;
+  }
+
+  .content1 {
+    background: url("./Images/3.PNG") no-repeat;
+    background-color: #f4f5f7;
+    background-size: cover;
+  }
+  .content2 {
+    background: url("./Images/2.PNG") no-repeat;
+    background-color: #f4f5f7;
+    background-size: cover;
+  }
+  .content3 {
+    background: url("./Images/Rent-car.png") no-repeat;
+    background-color: #f4f5f7;
+    background-size: cover;
+  }
+  .content4 {
+    background: url("./Images/budget-app.png") no-repeat;
+    background-color: #f4f5f7;
+    background-size: cover;
+  }
+  .content5 {
+    background: url("./Images/Todo.PNG") no-repeat;
+    background-color: #f4f5f7;
+    background-size: cover;
+  }
+  .content6 {
+    background: url("./Images/3.PNG") no-repeat;
+    background-color: #f4f5f7;
+    background-size: cover;
   }
 
   .other-content-title {
@@ -411,7 +442,7 @@
     text-decoration: none;
     display: inline-block;
     position: relative;
-    top: 124px;
+    margin-top: 338px;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -425,7 +456,7 @@
     width: 375px;
     height: 1601px;
     left: 0;
-    top: 4000px;
+    top: 3100px;
     background: url("./Images/Frame.png") no-repeat;
     background-color: #1c1a19;
     background-position: 100%;
@@ -542,7 +573,7 @@
     align-items: center;
     width: 375px;
     position: relative;
-    top: 5593px;
+    top: 4715px;
     background-color: #fff;
     left: 0;
     height: 849px;
@@ -702,7 +733,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 5592px;
+    top: 4592px;
     position: relative;
     width: 375px;
     height: 72px;
@@ -727,7 +758,7 @@
   }
 
   .home {
-    top: 5455px;
+    top: 4455px;
     margin: 120px 0 58px 0;
     left: 112px;
     position: relative;
@@ -980,6 +1011,9 @@
     right: 0;
     bottom: 0;
   }
+  .bottom-desk {
+    display: none;
+  }
 }
 
 /* For big screens */
@@ -1119,7 +1153,7 @@
     display: grid;
     grid-template-columns: auto;
     width: 1204px;
-    height: 1805px;
+    height: 1705px;
     order: 2;
     margin-top: 875px;
     margin-left: 118px;
@@ -1274,7 +1308,6 @@
     width: 1185px;
     height: 907px;
     justify-items: flex-start;
-    margin-top: 180px;
     margin-left: 0;
   }
 
@@ -1406,7 +1439,7 @@
     width: 1440px;
     height: 1195px;
     margin-left: -8px;
-    margin-top: 0;
+    margin-top: -400px;
     background: url("./Images/desk-bot-back.png") no-repeat #262626;
     background-position: right;
     background-position-y: 99px;
@@ -1530,8 +1563,7 @@
     flex-direction: column;
     align-items: center;
     width: 1163px;
-    height: 590px;
-    position: relative;
+    height: 490px;
     top: 0;
     margin-left: 127px;
   }

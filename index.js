@@ -27,86 +27,20 @@ function downloadResume() {
 
 //Applying HTML for mobile cards
 worksection.innerHTML = `
-<div class="featured-mob">
-<div class="img"> </div>
-<div class="img-deskt"><img src="./Images/desk-img.png" id="img-deskt" alt=""> </div>
-<div class="block">
-    <div class="multi"> Multi-Post Stories </div>
-    <div class="sup">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</div>
-</div>
-<ul class="textblock-tags">
-  <li>css</li>
-  <li>html</li>
-  <li>bootstrap</li>
-  <li>Ruby</li>
-</ul>
-<button class="smallbutton-mob" id="project">See Project</button>
-</div>
       <div class="frame43">
         <div class="content-defaults content1">
-          <h2 class="other-content-title">Profesional Art Printing Data</h2>
-          <p class="other-content-description">A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard</p>
-          <ul class="other-content-tags">
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
           <a class="other-content-link" id="project" href="#" >See Project</a>
         </div>
         <div class="content-defaults content2">
-          <h2 class="other-content-title">Profesional Art Printing Data</h2>
-          <p class="other-content-description">A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard</p>
-          <ul class="other-content-tags">
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
           <a class="other-content-link" id="project" href="#" >See Project</a>
         </div>
         <div class="content-defaults content3">
-          <h2 class="other-content-title">Profesional Art Printing Data</h2>
-          <p class="other-content-description">A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard</p>
-          <ul class="other-content-tags">
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
           <a class="other-content-link" id="project" href="#" >See Project</a>
         </div>
         <div class="content-defaults content4">
-          <h2 class="other-content-title">Profesional Art Printing Data</h2>
-          <p class="other-content-description">A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard</p>
-          <ul class="other-content-tags">
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
           <a class="other-content-link" id="project" href="#" >See Project</a>
         </div>
         <div class="content-defaults content5">
-          <h2 class="other-content-title">Profesional Art Printing Data</h2>
-          <p class="other-content-description">A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard</p>
-          <ul class="other-content-tags">
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-          <a class="other-content-link" id="project" href="#toolbar-" >See Project</a>
-        </div>
-        <div class="content-defaults content6">
-          <h2 class="other-content-title">Profesional Art Printing Data</h2>
-          <p class="other-content-description">A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard</p>
-          <ul class="other-content-tags">
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
           <a class="other-content-link" id="project" href="#toolbar-" >See Project</a>
         </div>
       
@@ -390,21 +324,7 @@ const deskcardDetails = [
 
 // Applying HTML for desktop cards
 worksectiondesk.innerHTML = `
-<div class="featured-desk">
-<div class="img"> </div>
-<div class="img-deskt"><img src="./Images/desk-img.png" id="img-deskt" alt=""> </div>
-<div class="block">
-    <div class="multi"> Multi-Post Stories </div>
-    <div class="sup">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</div>
-</div>
-<ul class="textblock-tags">
-  <li>css</li>
-  <li>html</li>
-  <li>bootstrap</li>
-  <li>Ruby</li>
-</ul>
-<a href="#main-id"><button class="smallbutton deskbutton" id="project" type="submit" value="submit">See Project</button></a>
-</div>
+
 <div class="frame-desk" id="framedesk">
   <div class="content-defaults-desk content1-desk">
     <a href="#">
@@ -431,11 +351,7 @@ worksectiondesk.innerHTML = `
       <button class="bigbutton deskbutton">See Project</button>
     </a>
   </div>
-  <div class="content-defaults-desk content6-desk">
-    <a href="#">
-      <button class="bigbutton deskbutton">See Project</button>
-    </a>
-  </div>
+
 </div>
 `;
 
