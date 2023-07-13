@@ -73,7 +73,7 @@ menu.onclick = function() {
     },
     live: 'https://talha-hanif5666.github.io/Todo-list-new/dist/',
     source: 'https://github.com/Talha-Hanif5666/Todo-list-new',
-    img: './Images/3.png',
+    img: './Images/Todolist.png',
   },
   {
     id: 1,
@@ -86,7 +86,7 @@ menu.onclick = function() {
     },
     live: 'https://talha-hanif5666.github.io/Final-project/',
     source: 'https://github.com/Talha-Hanif5666/Final-project',
-    img: './Images/2.png',
+    img: './Images/Web-summit.png',
   },
   {
     id: 2,
@@ -227,7 +227,7 @@ const deskcardDetails = [
     },
     live: 'https://talha-hanif5666.github.io/Todo-list-new/dist/',
     source: 'https://github.com/Talha-Hanif5666/Todo-list-new',
-    img: './Images/3.png',
+    img: './Images/Todolist.png',
   },
   {
     id: 1,
@@ -240,7 +240,7 @@ const deskcardDetails = [
     },
     live: 'https://talha-hanif5666.github.io/Final-project/',
     source: 'https://github.com/Talha-Hanif5666/Final-project',
-    img: './Images/2.png',
+    img: './Images/Web-summit.png',
   },
   {
     id: 2,
