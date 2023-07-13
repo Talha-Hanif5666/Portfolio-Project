@@ -227,7 +227,7 @@ const deskcardDetails = [
     },
     live: 'https://talha-hanif5666.github.io/Todo-list-new/dist/',
     source: 'https://github.com/Talha-Hanif5666/Todo-list-new',
-    img: './Images/budget-app.png',
+    img: './Images/Todolist.png',
   },
   {
     id: 1,
