@@ -1,251 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
-<title>Portfolio Project</title>
-</head>
-
-<body>
-  <div class="main" id="main-id">
-    
-      <nav class="toolbar" id="toolbar-">
-        <div class="placeholder">
-          <a id="text">Talha Hanif</a>
-        </div>
-        <a class="menu" href="#">
-          <img id="menu-icon" src="Images\Union.png" alt="menu-icon">
-        </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aamir Khan</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"
+      defer
+    ></script>
+    <script src="./index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="nav-header">
+      <a href="#"
+        ><h2 class="logo">M.Talha Hanif</h2>
+      </a>
+      <nav class="navbar">
+        <ul class="nav-flex">
+          <li class="nav-link">
+            <a href="#work" class="link-nav">Portfolio</a>
+          </li>
+          <li class="nav-link">
+            <a href="#about" class="link-nav">About</a>
+          </li>
+          <li class="nav-link">
+            <a href="#contact" class="link-nav">Contact</a>
+          </li>
+        </ul>
       </nav>
-      <div id="menu-">
-        <div id="closed">
-          <span class="close">&times;</span>
-        </div>
-        <div id="menu-list">
-          <ul id="mlist">
-            <li><a href="#recent-work">Portfolio</a></li><hr>
-             <li><a href="#about-myself">About</a></li><hr>
-            <li><a href="#contact">Contact</a></li> <hr>
-          </ul>
-        </div>
+      <div class="mobile-toggle-btn">
+        <ion-icon name="menu" class="icon-menu"></ion-icon>
+        <ion-icon name="close" class="icon-menu"></ion-icon>
       </div>
-    <div class="popmobdiv"></div>
-       
+    </header>
 
-      <nav class="toolbar-desktop" id="toolbar-">
-        <div class="placeholder"><a>Talha Hanif</a></div>
-        <div class="nav-detail">
-          <ul>
-            <li><a href="#recent-work">Portfolio</a></li><hr>
-             <li><a href="#about-myself">About</a></li><hr>
-            <li><a href="#contact">Contact</a></li> <hr>
-            <li><a><img src="Images\Message.png" alt="message.png"></a></li>
-          </ul>
-          
-        </div> 
-      </nav>
-
-    
-
-    <div class="deskdiv"></div>
-     
-    
-    <section>
-    <div class="headline" id="headline-">
-      <h1 class="primary-text">Hey There. <br> I'm Talha</h1>
-      <h2 class="secondary-text">I'am a Software Developer</h2>
-      <p class="description">I can help you build a product , feature or website Look through some of my
-        work and experience! If you like what you see and have a project you need coded, <br>
-        don’t hestiate to contact me.</p>
-      <ul class="social-media">
-        <li><a href="https://github.com/Talha-Hanif5666" id="github">
-            <img src="Images\github.png" alt="github"></a></li>
-        <li><a href="https://www.linkedin.com/in/muhammad-talha-hanif-6b1355116" id="linkedin">
-            <img src="Images\linkedin.png" alt="linkedin"></a></li>
-        <li><a href="https://wellfound.com/u/muhammad-talha-hanif-1" id="angelist">
-            <img src="Images\angel.png" alt="angelist"></a></li>
-        <li><a href="https://twitter.com/TalhaHa45039660?t=R4git6jFgsysI4xPxmN-ag&s=09" id="twitter">
-            <img src="Images\twitter.png" alt="twitter"></a></li>
-        <li><a href="https://medium.com/@talhahanif5666" id="medium">
-            <img src="Images\medium.png" alt="medium"></a></li>
+    <!--=============== HERO SECTION===============-->
+    <section id="hero" class="hero-section">
+      <div class="intro-portion">
+        <h1 class="main-heading">Hey There. I'm Talha</h1>
+        <h3 class="supporting-text">I'm a <span class="auto-change"></span></h3>
+        <p class="description-text">
+          I can help you build a product , feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don't hesitate to contact me.
+        </p>
+      </div>
+      <a href="#contact" class="btn-primary" rel="noopener"
+        >Contact Me <i class="fa fa-envelope"></i
+      ></a>
+      <ul class="social-media-icons">
+        <li>
+          <a
+            href="https://github.com/Talha-Hanif5666"
+            target="_blank"
+            rel="noopener"
+            ><div class="hero-github-icon"></div
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/muhammad-talha-hanif-6b1355116"
+            target="_blank"
+            rel="noopener"
+            ><div class="hero-linkedin-icon"></div
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://wellfound.com/u/muhammad-talha-hanif-1"
+            target="_blank"
+            rel="noopener"
+            ><div class="hero-angel-list-icon"></div
+          ></a>
+        </li>
       </ul>
-    </div>
-  </section>
-  </div>
+      <div class="profile-pic"></div>
+      <div class="main-image"></div>
+    </section>
 
-<section class="work-section" id="works-">
-  <div class="works" id="recent-work">
-    <div class="title">
-      <h2 id="recent" >My Recent Works</h2>
-      <div class="line"><img src="Images\line.png" alt="line.png"></div>
-      <div class="line-desktop"><img src="Images\line-desk.png" alt="line-desk.png"></div>
-    </div>
-    <div class="frame" id="work-card">
-       
-      <div id="mobhtml" class="mob-html"></div> 
-      
-<div id="deskhtml" class="desk-html"></div>
-       <div class="frame-desk" id="framedesk">
-        
-       
-      </div> 
-    </div>
-  </div>
-  </section>
+    <!--=============== WORK SECTION ===============-->
+    <section id="work" class="work-section">
+      <div class="grid-items" id="grid"></div>
+    </section>
 
-  <section>
-    <div class="about" id="about-myself">
-      <div class="about-top">
-        <h2 class="about-primary-text" id="aboutbtm">About me</h2>
-        <p class="about-description">Hello I’m a software developer! I can help you build a product , feature or website
-          Look through some of my work and experience! If you like what you see and have a project you need coded, don’t
-          hestiate to contact me.</p>
-        <a class="about-link"  onclick="downloadResume()" target="_blank">Get My Resume</a>
+    <!--=============== ABOUT SECTION ===============-->
+    <section id="about" class="about-section">
+      <div class="about-flex">
+        <div class="about-content">
+          <h1 class="about-heading">About me</h1>
+          <p class="about-description">
+            Experienced full stack developer with a passion for developing
+            innovative programs that expedite the efficiency and effectiveness
+            of organizational success. Well-versed in technology and writing
+            code to create reliable and user-friendly systems. Ability to learn
+            new things quickly, collaboration, communication, pair programming,
+            and remote work.
+          </p>
+          <div class="btn-left" id="btn-id">
+            <a
+              href="https://docs.google.com/document/d/1c5H-HCa_iX39YRFZSfLob_qxNhcVXvDavOy71IAfh4c/edit"
+              target="_blank"
+              rel="noopener"
+              class="btn-primary"
+              >Get My Resume</a
+            >
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="about-image"></div>
+        </div>
       </div>
-      <div class="line2"><img src="Images\line2.png" alt="aa"></div>
-      <div class="devider"><img src="Images\Devider.png" alt="aa"></div>
-      
-      <div class="about-bottom">
-        <ul>
-          <li class="about-bottom-subtopic subtopic-language">Language</li>
-          <div class="about-bottom-items">
-            <ul>
-              <li>Javascript</li>
-              <li>Ruby</li>
-              <li>Html</li>
-              <li>Css</li>
-            </ul>
-          </div>
-        </ul>
-        <ul>
-          <li class="about-bottom-subtopic subtopic-frameworks">Frameworks</li>
-          <div class="about-bottom-items">
-            <ul>
-              <li>Bootstrap</li>
-              <li>Ruby on Rails</li>
-              <li>RSPec</li>
-              <li>CapyBara</li>
-              <li>Selenium</li>
-            </ul>
-          </div>
-        </ul>
-        <ul>
-          <li class="about-bottom-subtopic subtopic-skills">Skills</li>
-          <div class="about-bottom-items">
-            <ul>
-              <li>Codekit</li>
-              <li>Github</li>
-              <li>Codepen</li>
-              <li>Gitlab</li>
-              <li>Terminal</li>
-            </ul>
-          </div>
-        </ul>
-      </div> 
+      <hr />
+      <ul class="about-list">
+        <li class="language-list">
+          Language
+          <ul>
+            <li class="list-style-none">Javascript</li>
+            <li class="list-style-none">Ruby</li>
+            <li class="list-style-none">Html</li>
+            <li class="list-style-none">Css</li>
+          </ul>
+        </li>
+        <li class="frameworks-list">
+          Frameworks
+          <ul>
+            <li class="list-style-none">Bootstrap</li>
+            <li class="list-style-none">Ruby on Rails</li>
+            <li class="list-style-none">React Js</li>
+            <li class="list-style-none">Node Js</li>
+            <li class="list-style-none">Express Js</li>
+            <li class="list-style-none">Material UI</li>
+            <li class="list-style-none">Tailwind CSS</li>
+          </ul>
+        </li>
+        <li class="skills-list">
+          Skills
+          <ul>
+            <li class="list-style-none">Codekit</li>
+            <li class="list-style-none">Github</li>
+            <li class="list-style-none">Codepen</li>
+            <li class="list-style-none">Terminal</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
 
-      <div class="bottom-desk" id="bottom-desk">
-        
-        <div class="about-bottom-subtopic">
-        <div class="subtopic-language">
-          <h1><img src="Images\Rectangle.png" alt="img.png">  Language</h1>
+    <!--=============== CONTACT SECTION ===============-->
+    <section id="contact" class="contact-section">
+      <h3 class="contact-heading">
+        I'm always interested in hearing about new projects, so if you'd like to
+        chat please get in touch.
+      </h3>
+      <form class="form-control" action="https://formspree.io/f/mlevodye" method="POST">
+        <input
+          placeholder="Full Name"
+          class="text-field"
+          type="text"
+          name="name"
+          id="fullName"
+          onchange="changeHandler()"
+          maxlength="30"
+          required
+        />
+        <input
+          placeholder="Email Address"
+          class="text-field"
+          type="email"
+          name="email"
+          id="email"
+          onchange="changeHandler()"
+          required
+        />
+        <textarea
+          class="message-field"
+          placeholder="Enter text here"
+          name="message"
+          id="message"
+          onchange="changeHandler()"
+          maxlength="500"
+          required
+        ></textarea>
+        <div>
+          <button type="submit" class="btn-primary" id="submit">
+            Get In Touch
+          </button>
         </div>
-          <div class="about-bottom-items">
-            <ul>
-              <li>Javascript</li>
-              <li>Ruby</li>
-              <li>Html</li>
-              <li>Css</li>
-            </ul>
-          </div>
-        </div>
+        <div class="alert" id="alert-danger"></div>
+      </form>
+    </section>
 
-        <div class="about-bottom-subtopic2">
-        <div class="subtopic-language2">
-          <h1><img src="Images\Rectangl.png" alt="img.png">  Frameworks</h1>
-        </div>
-          <div class="about-bottom-items2">
-            <ul>
-              <li>Bootstrap</li>
-              <li>Ruby on Rails</li>
-              <li>RSPec</li>
-              <li>CapyBara</li>
-              <li>Selenium</li>
-            </ul>
-          </div>
-        </div>
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+      <hr />
+      <ul class="footer-social-icons">
+        <li>
+          <a
+            href="https://github.com/Talha-Hanif5666"
+            target="_blank"
+            rel="noopener"
+            ><div class="github-icon"></div
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/muhammad-talha-hanif-6b1355116"
+            target="_blank"
+            rel="noopener"
+            ><div class="linkedin-icon"></div
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://wellfound.com/u/muhammad-talha-hanif-1"
+            target="_blank"
+            rel="noopener"
+            ><div class="angel-list-icon"></div
+          ></a>
+        </li>
+      </ul>
+    </footer>
 
-        <div class="about-bottom-subtopic2">
-          <div class="subtopic-language2">
-            <h1><img src="Images\Rectangle-.png" alt="img.png">  Skills</h1>
-          </div>
-            <div class="about-bottom-items2">
-              <ul>
-                <li>Codekit</li>
-              <li>Github</li>
-              <li>Codepen</li>
-              <li>Gitlab</li>
-              <li>Terminal</li>
-              </ul>
-            </div>
-          </div>
-      </div>
-    </div>
-</section>
-
-<section class="contact" id="contact">
-  <div class="bottom">
-    <p class="text">I'm always interested in hearing about
-       new projects, so if you'd like to chat please get in 
-       touch.</p>
-       <form class="bottomform" action="https://formspree.io/f/mlevodye" method="POST" >
-        <input class="username" type="text" id="name" name="user_name" maxlength="30" placeholder="Full name" required>
-        <input class="email" type="email" id="mail" name="user_email" placeholder="Email address" required>
-        <textarea class="textarea" type="text" name="message" placeholder="" maxlength="500" required>Hello Mariane. Glad to see you |</textarea>
-        <p class="errortext"></p>
-        <button class="formbutton" type="submit" value="submit">Get in touch</button>    
-        </form>
-  </div>
-
-  <div class="bottom1">
-    <p class="text1">I'm always interested in hearing about
-       new projects, so if you'd like to chat please get in 
-       touch.</p>
-       <form class="bottomform1" action="https://formspree.io/f/mlevodye" method="POST" >
-        <input class="username1" type="text" id="name" name="user_name" maxlength="30" placeholder="Full name" required>
-        <input class="email1" type="email" id="mail" name="user_email" placeholder="Email address" required>
-        <textarea class="textarea1" type="text" name="message" placeholder="" maxlength="500" required>Hello Mariane. Glad to see you |</textarea>
-        <p class="errortext1"></p>
-        <button class="formbutton1" type="submit" value="submit">Get in touch</button>    
-        </form>
-  </div>
-</section>
-
-<footer>
-   <div class="bottom-icons">
-    <ul class="social-icons">
-      <li><a href="https://github.com/Talha-Hanif5666" id="github">
-          <img src="Images\bottom1.png" alt="github"></a></li>
-      <li><a href="https://www.linkedin.com/in/muhammad-talha-hanif-6b1355116" id="linkedin">
-          <img src="Images\bottom2.png" alt="linkedin"></a></li>
-      <li><a href="https://wellfound.com/u/muhammad-talha-hanif-1" id="angelist">
-          <img src="Images\bottom3.png" alt="angelist"></a></li>
-      <li><a href="https://twitter.com/TalhaHa45039660?t=R4git6jFgsysI4xPxmN-ag&s=09" id="twitter">
-          <img src="Images\bottom4.png" alt="twitter"></a></li>
-      <li><a href="https://medium.com/@talhahanif5666" id="medium">
-          <img src="Images\bottom5.png" alt="medium"></a></li>
-    </ul>
-   </div>
-     <div class="home">
-        <img src="Images\Shape.png" alt="home.png">
-     </div>
-</footer>
-<script src="index.js"></script>
-</body>
+    <!--=============== MODAL ===============-->
+    <div class="modal-container" id="myModal"></div>
+  </body>
 </html>

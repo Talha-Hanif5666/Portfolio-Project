@@ -1,438 +1,373 @@
-const menu = document.getElementById('menu-');
-const button= document.getElementById('menu-icon');
-const closebtn = document.getElementById ('closed');
+// Mobile Nav Toggle
+const mobileBtn = document.querySelector(".mobile-toggle-btn");
+const headerNav = document.querySelector(".header");
+const navLink = document.querySelectorAll(".link-nav");
+const profilePic = document.querySelector(".profile-pic");
 
-const popupmobile = document.getElementById('popupmobile');
-const closepopup= document.getElementById('popupclosemobile');
-const popupdesk= document.getElementById('popupdesk');
-const buttonpopupdesk= document.getElementById('desk-button');
-const closepopupdesk= document.getElementById('close-desk-');
+mobileBtn.addEventListener("click", () => {
+  headerNav.classList.toggle("active");
+  profilePic.classList.toggle("hide-profile");
+});
 
-const workid = document.querySelector('#works-');
-const worksection = document.querySelector('.mob-html');
-const worksectiondesk = document.querySelector('.desk-html');
+[].forEach.call(navLink, (element) => {
+  element.onclick = () => {
+    headerNav.classList.remove("active");
+  };
+});
 
-function downloadResume() {
-  var resumeUrl = './Images/Muhammad_Talha_Resume.pdf'; // Replace with the actual path to your resume PDF file
+// Implement Dynamic Functionality for cards and modal
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("myModal");
+  const gridItems = document.getElementById("grid");
 
-  var link = document.createElement('a');
-  link.href = resumeUrl;
-  link.download = './Images/Muhammad_Talha_Resume.pdf';
-  link.target = '_blank';
+  // Create a new object
+  const mainCardDetails = {
+    title: "Maths Magician App",
+    desc: "Math Magician is a Single Page App(SPA) that I created using React. It depicts how to use react components and state to make a simple calculator. I used the Apple's design of calculator to make the layout of the page.",
+    languages: ["JavaScript", "NodeJS", "Css", "ReactJS"],
+    live: "https://talhahanif-maths.onrender.com/",
+    source: "https://github.com/Talha-Hanif5666/Maths-Magician",
+    img: "./Images/math.png",
+  };
 
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-}
+  const {
+    title, desc, languages, live, source, img,
+  } = mainCardDetails;
+  // Get all data from languages array in side mainCardDetails object
+  const languagesArr = languages
+    .map((language) => `<li>${language}</li>`)
+    .join("");
 
-//Applying HTML for mobile cards
-worksection.innerHTML = `
-      <div class="frame43">
-        <div class="content-defaults content1">
-          <a class="other-content-link" id="project" href="#" >See Project</a>
-        </div>
-        <div class="content-defaults content2">
-          <a class="other-content-link" id="project" href="#" >See Project</a>
-        </div>
-        <div class="content-defaults content3">
-          <a class="other-content-link" id="project" href="#" >See Project</a>
-        </div>
-        <div class="content-defaults content4">
-          <a class="other-content-link" id="project" href="#" >See Project</a>
-        </div>
-        <div class="content-defaults content5">
-          <a class="other-content-link" id="project" href="#toolbar-" >See Project</a>
-        </div>
-      
-        
-        `;
+  // Add dynamic data in main card
+  let mainCardData = "";
+  mainCardData += `
+                  <h1 class='work-main-heading'>My Recent Works</h1>
+                  <hr class='divider' />
+                  <div class='main-card' id='main'>
+                    <img src=${img} class='post-image'/>
+                    <div class='main-card-content'>
+                      <h4 class='work-title-post'>${title}</h4>
+                      <p class='work-supporting-text'>
+                      ${desc.slice(0, 100)} ...
+                      </p>
+                      <ul class='languages-list'>
+                        ${languagesArr}
+                      </ul>
+                      <div class='btn-left'>
+                        <button class='btn-primary btn' onclick='mainModal()'>See Project</button>
+                      </div>
+                    </div>
+                  </div>
+  `;
 
-//Applying interaction to mobile menu
-button.onclick = function() {
-  menu.style.display = 'block';
-}
-
-closebtn.onclick = function() {
-  menu.style.display = 'none';
-}
-
-menu.onclick = function() {
-  menu.style.display = 'none';
-}
- 
- // Create new array of objects for mobile
- const cardDetails = [
-  {
-    id: 0,
-    title: 'Todo List Project',
-    desc: "This is a minimal to-do list used to organize your daily schedule. The system also helps to mark and unmark the completion progress of your daily tasks. It is done for educational purposes.",
-    tecnologies: {
-      tech1: 'html',
-      tech2: 'JavaScript',
-      tech3: 'Css',
+  // Create new array of objects
+  const cardDetails = [
+    {
+      id: 0,
+      title: 'Todo List Project',
+      desc: "This is a minimal to-do list used to organize your daily schedule. The system also helps to mark and unmark the completion progress of your daily tasks. It is done for educational purposes.",
+      languages: ["Ruby On Rails", "PostgreSql", "React JS"],
+      live: 'https://talha-hanif5666.github.io/Todo-list-new/dist/',
+      source: 'https://github.com/Talha-Hanif5666/Todo-list-new',
+      img: './Images/toodolist.png',
     },
-    live: 'https://talha-hanif5666.github.io/Todo-list-new/dist/',
-    source: 'https://github.com/Talha-Hanif5666/Todo-list-new',
-    img: './Images/toodolist.png',
-  },
-  {
-    id: 1,
-    title: 'Web Development Global Summit',
-    desc: "Web Development Course is my HTML, CSS, and JS capstone project. It is about a web development course where people can visit the site to learn more about it and invite others." ,
-    tecnologies: {
-      tech1: 'html',
-      tech2: 'JavaScript',
-      tech3: 'Css',
+    {
+      id: 1,
+      title: 'Web Development Global Summit',
+      desc: "Web Development Course is my HTML, CSS, and JS capstone project. It is about a web development course where people can visit the site to learn more about it and invite others." ,
+      languages: ["Ruby On Rails", "PostgreSql", "React JS"],
+      live: 'https://talha-hanif5666.github.io/Final-project/',
+      source: 'https://github.com/Talha-Hanif5666/Final-project',
+      img: './Images/web-summit.png',
     },
-    live: 'https://talha-hanif5666.github.io/Final-project/',
-    source: 'https://github.com/Talha-Hanif5666/Final-project',
-    img: './Images/web-summit.png',
-  },
-  {
-    id: 2,
-    title: 'RENTCAR Web App',
-    desc: "RENTCAR is a collaborative project, it's about luxury car rental platform built with Rails and React. Users can browse and reserve available models, manage reservations, and contribute by adding or deleting cars. It offers a seamless experience for renting luxury cars with ease." ,
-    tecnologies: {
-      tech1: 'React',
-      tech2: 'Rails',
-      tech3: 'Ruby',
+    {
+      id: 2,
+      title: 'RENTCAR Web App',
+      desc: "RENTCAR is a collaborative project, it's about luxury car rental platform built with Rails and React. Users can browse and reserve available models, manage reservations, and contribute by adding or deleting cars. It offers a seamless experience for renting luxury cars with ease." ,
+      languages: ["Ruby On Rails", "PostgreSql", "React JS"],
+      live: 'https://capstone-rails.onrender.com/login',
+      source: 'https://github.com/Talha-Hanif5666/capstone-rails',
+      img: './Images/Rent-car.png',
     },
-    live: 'https://capstone-rails.onrender.com/login',
-    source: 'https://github.com/Talha-Hanif5666/capstone-rails',
-    img: './Images/Rent-car.png',
-  },
-  {
-    id: 3,
-    title: 'Budget App',
-    desc: "Budget App is an application that One can create categories for all their transaction, view total cost of all categories, view the cost of one transaction." ,
-    tecnologies: {
-      tech1: 'Ruby',
-      tech2: 'Ruby on Rails',
-      tech3: 'Css',
+    {
+      id: 3,
+      title: 'Budget App',
+      desc: "Budget App is an application that One can create categories for all their transaction, view total cost of all categories, view the cost of one transaction." ,
+      languages: ["Ruby On Rails", "PostgreSql", "React JS"],
+      live: 'https://ror-capstone-project.onrender.com/',
+      source: 'https://github.com/Talha-Hanif5666/Budget-App',
+      img: './Images/budget-app.png',
     },
-    live: 'https://ror-capstone-project.onrender.com/',
-    source: 'https://github.com/Talha-Hanif5666/Budget-App',
-    img: './Images/budget-app.png',
-  },
-  {
-    id: 4,
-    title: 'Awesome books Project',
-    desc: "Awesome books Project is about creating a library of books. where a user can add a book title and author or delete it." ,
-    tecnologies: {
-      tech1: 'html',
-      tech2: 'React',
-      tech3: 'JavaScript',
-    },
-    live: 'https://talha-hanif5666.github.io/Awesomebooks-new/',
-    source: 'https://github.com/Talha-Hanif5666/Awesomebooks-new',
-    img: './Images/Todo.PNG',
-  },
-  {
-    id: 5,
-    title: 'Profesional Art Printing Data',
-    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard" ,
-    tecnologies: {
-      tech1: 'html',
-      tech2: 'bootstrap',
-      tech3: 'Ruby',
-    },
-    live: 'https://talha-hanif5666.github.io/',
-    source: 'https://talha-hanif5666.github.io/',
-    img: './Images/',
-  },
-  {
-    id: 6,
-    title: 'Profesional Art Printing Data',
-    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard" ,
-    tecnologies: {
-      tech1: 'html',
-      tech2: 'bootstrap',
-      tech3: 'Ruby',
-    },
-    live: 'https://talha-hanif5666.github.io/',
-    source: 'https://talha-hanif5666.github.io/',
-    img: './Images/desktop-popup.png',
-  },
-  {
-    id: 7,
-    title: 'Profesional Art Printing Data',
-    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard" ,
-    tecnologies: {
-      tech1: 'html',
-      tech2: 'bootstrap',
-      tech3: 'Ruby',
-    },
-    live: 'https://talha-hanif5666.github.io/',
-    source: 'https://talha-hanif5666.github.io/',
-    img: './Images/desktop-popup.png',
-  }
-];
+    {
+      id: 4,
+      title: 'Awesome books Project',
+      desc: "Awesome books Project is about creating a library of books. where a user can add a book title and author or delete it." ,
+      languages: ["Ruby On Rails", "PostgreSql", "React JS"],
+      live: 'https://talha-hanif5666.github.io/Awesomebooks-new/',
+      source: 'https://github.com/Talha-Hanif5666/Awesomebooks-new',
+      img: './Images/Todo.PNG',
+    }
+  ];
 
-// Create pop up section for mob
-const workdetailsSection = (content) => `
-<div class="pop-up-header" id="popupclosemobile">
-        <span class="mobileclose">&times;</span>
-        <h2>${cardDetails[content].title}</h2>
-      </div>
-      <div>
-        <ul class="pop-up-tags">
-          <li>${cardDetails[content].tecnologies.tech1}</li>
-          <li>${cardDetails[content].tecnologies.tech2}</li>
-          <li>${cardDetails[content].tecnologies.tech3}</li>
-        </ul>
-      </div>
-      <div class="mobile-popup-img">
-      <img src="${cardDetails[content].img}" alt="popup-img.png">
-      </div>
-      <div class="popup-description">
-        <p>${cardDetails[content].desc}</p>
-      </div>
-      <div class="popup-buttons">
-      <a href="${cardDetails[content].live}" id="see-live">See Live <img src="./Images/mob-popup.png"></a>
-      <a href="${cardDetails[content].source}" id="see-source"> See Source <img src="./Images/pop-icon-github.png"></a>  
-      </div>
-`;
+  // Fetch all cards details from cardsDetails array of objects
+  let cardData = "";
+  cardDetails.map((card) => {
+    const {
+      id, img, title, desc, languages,
+    } = card;
+    // Fetch languages array from a languages object
+    const languagesArr = languages.map((lang) => `<li>${lang}</li>`).join("");
+    // Add dynamic in other cards
+    cardData += `
+                <div class='card-desktop' id='card-image-${id}'>
+                  <img src='${img}' alt='card image' />
+                  <div class='card-info'>
+                    <h1 class='card-heading'>${title}</h1>
+                    <p class='card-text'>${desc.slice(0, 100)} ...</p>
+                    <ul class='card-languages-list'>
+                      ${languagesArr}
+                    </ul>
+                    <button
+                      class='btn-block btn-primary btn-hidden'
+                      onclick='otherModal(${id})'
+                    >
+                      See Project
+                    </button>
+                  </div>
+                </div>
+                <div class='card'>
+                  <img src='${img}' alt='card image' />
+                  <div class='card-info'>
+                    <h1 class='card-heading'>${title}</h1>
+                    <p class='card-text'>${desc.slice(0, 100)} ...</p>
+                    <ul class='card-languages-list'>
+                      ${languagesArr}
+                    </ul>
+                    <button
+                      class='btn-block btn-primary btn'
+                      onclick='otherModal(${id})'
+                    >
+                      See Project
+                    </button>
+                  </div>
+                </div>
+    `;
+    return cardData;
+  });
 
-const details = document.querySelectorAll('#project');
+  // Show all data in main and other cards
+  gridItems.innerHTML = mainCardData + cardData;
 
-// Create pop-up section for mobile
-details.forEach((detail) => {
-  detail.addEventListener('click', (event) => {
-    event.preventDefault();
-    let div = document.createElement('div');
-    div.classList.add("pop-up-mobile");
-    div.setAttribute("id", "popupmobile");
-    const index = Array.from(detail.parentNode.parentNode.children).indexOf(detail.parentNode);
-    div.innerHTML = workdetailsSection(index);
-    let container = document.querySelector('.popmobdiv');
-    container.appendChild(div);
-    const closedetails = document.querySelector('.mobileclose');
-    closedetails.addEventListener('click', () => {
-      container.removeChild(div);
+  // Add dynamic modal for main cards data
+  mainModal = () => {
+    let modalDetails = "";
+    modalDetails += `
+                    <div class='modal'>
+                      <div class='modal-header'>
+                        <h1>${title}</h1>
+                        <ion-icon name='close' class='modal-close-icon'></ion-icon>
+                      </div>
+                      <ul class='modal-languages-list'>
+                        ${languages.map((lang) => `<li>${lang}</li>`).join("")}
+                      </ul>
+                      <div class='modal-content'>
+                        <div class='modal-image-mobile'>
+                          <img src='${img}' alt='modal image' />
+                        </div>
+                        <div class='modal-image-desktop'>
+                          <img src='${img}' alt='modal image' />
+                        </div>
+                        <p class='title'>${desc}</p>
+                      </div>
+                      <div class='buttons'>
+                        <a href='${live}' class='btn-primary' target='_blank'>
+                          See Live
+                          <span>
+                            <img  src='./Images/Icon-Export.svg'
+                                  alt='live-icon'
+                                  class='icon-right'
+                                  height='18'/>
+                            </span>
+                        </a>
+                        <a href='${source}' class='btn-primary' target='_blank'>
+                          See Source
+                          <span>
+                          <img  src='./Images/Icon-GitHub.svg'
+                                alt='live-icon'
+                                class='icon-right'
+                                height='18'/>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+  `;
+
+    // Show Data in modal
+    modal.innerHTML = modalDetails;
+
+    // Open modal
+    modal.style.display = "block";
+
+    // Close modal
+    const closeModal = document.getElementsByClassName("modal-close-icon")[0];
+    closeModal.addEventListener("click", () => {
+      modal.style.display = "none";
     });
+  };
+
+  // Add dynamic modal details for other cards
+  otherModal = (id) => {
+    const data = cardDetails.find((card) => card.id === id);
+    let modalData = "";
+    modalData += `
+                  <div class='modal'>
+                    <div class='modal-header'>
+                      <h1>${data.title}</h1>
+                      <ion-icon name='close' class='modal-close-icon'></ion-icon>
+                    </div>
+                    <ul class='modal-languages-list'>
+                      ${data.languages
+    .map((lang) => `<li>${lang}</li>`)
+    .join("")}
+                    </ul>
+                    <div class='modal-content'>
+                      <div class='modal-image-mobile'>
+                        <img src='${data.img}' alt='modal image' />
+                      </div>
+                      <div class='modal-image-desktop'>
+                        <img src='${data.img}' alt='modal image' />
+                      </div>
+                      <p class='title'>${data.desc}</p>
+                    </div>
+                    <div class='buttons'>
+                      <a href='${
+  data.live
+}' class='btn-primary' target='_blank'>
+                          See Live
+                          <span>
+                            <img  src='./Images/Icon-Export.svg'
+                                alt='live-icon'
+                                class='icon-right'
+                                height='18'/>
+                          </span>
+                      </a>
+                      <a href='${
+  data.source
+}' class='btn-primary' target='_blank'>
+                        See Source
+                        <span>
+                          <img  src='./Images/Icon-GitHub.svg'
+                              alt='live-icon'
+                              class='icon-right'
+                              height='18'/>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+    `;
+
+    // Show Data in modal
+    modal.innerHTML = modalData;
+
+    // Open modal
+    modal.style.display = "block";
+
+    // Close modal
+    const closeModal = document.getElementsByClassName("modal-close-icon")[0];
+    closeModal.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+  };
+
+  // When user clicks out side of the modal, close the modal.
+  document.onclick = (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  };
+
+  new Typed(".auto-change", {
+    strings: [
+      "Web Developer",
+      "Full Stack Developer",
+      "Front-end Developer",
+      "React Native Developer",
+    ],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true,
   });
 });
 
+// Form Validation
+const email = document.getElementById("email");
+const fullName = document.getElementById("fullName");
+const message = document.getElementById("message");
+const submit = document.getElementById("submit");
+const alert = document.getElementById("alert-danger");
 
-// Create caard section for desktop
-const deskcardDetails = [
-  {
-    id: 0,
-    title: 'Todo List Project',
-    desc: "This is a minimal to-do list used to organize your daily schedule. The system also helps to mark and unmark the completion progress of your daily tasks. It is done for educational purposes.",
-    tecnologies: {
-      tech1: 'html',
-      tech2: 'JavaScript',
-      tech3: 'Css',
-    },
-    live: 'https://talha-hanif5666.github.io/Todo-list-new/dist/',
-    source: 'https://github.com/Talha-Hanif5666/Todo-list-new',
-    img: './Images/toodolist.png',
-  },
-  {
-    id: 1,
-    title: 'Web Development Global Summit',
-    desc: "Web Development Course is my HTML, CSS, and JS capstone project. It is about a web development course where people can visit the site to learn more about it and invite others." ,
-    tecnologies: {
-      tech1: 'html',
-      tech2: 'JavaScript',
-      tech3: 'Css',
-    },
-    live: 'https://talha-hanif5666.github.io/Final-project/',
-    source: 'https://github.com/Talha-Hanif5666/Final-project',
-    img: './Images/web-summit.png',
-  },
-  {
-    id: 2,
-    title: 'RENTCAR Web App',
-    desc: "RENTCAR is a collaborative project, it's about luxury car rental platform built with Rails and React. Users can browse and reserve available models, manage reservations, and contribute by adding or deleting cars. It offers a seamless experience for renting luxury cars with ease." ,
-    tecnologies: {
-      tech1: 'React',
-      tech2: 'Rails',
-      tech3: 'Ruby',
-    },
-    live: 'https://capstone-rails.onrender.com/login',
-    source: 'https://github.com/Talha-Hanif5666/capstone-rails',
-    img: './Images/Rent-car.png',
-  },
-  {
-    id: 3,
-    title: 'Budget App',
-    desc: "Budget App is an application that One can create categories for all their transaction, view total cost of all categories, view the cost of one transaction." ,
-    tecnologies: {
-      tech1: 'Ruby',
-      tech2: 'Ruby on Rails',
-      tech3: 'Css',
-    },
-    live: 'https://ror-capstone-project.onrender.com/',
-    source: 'https://github.com/Talha-Hanif5666/Budget-App',
-    img: './Images/budget-app.png',
-  },
-  {
-    id: 4,
-    title: 'Awesome books Project',
-    desc: "Awesome books Project is about creating a library of books. where a user can add a book title and author or delete it." ,
-    tecnologies: {
-      tech1: 'html',
-      tech2: 'React',
-      tech3: 'JavaScript',
-    },
-    live: 'https://talha-hanif5666.github.io/Awesomebooks-new/',
-    source: 'https://github.com/Talha-Hanif5666/Awesomebooks-new',
-    img: './Images/Todo.PNG',
-  },
-  {
-    id: 5,
-    title: 'Profesional Art Printing Data',
-    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard" ,
-    tecnologies: {
-      tech1: 'html',
-      tech2: 'bootstrap',
-      tech3: 'Ruby',
-    },
-    live: 'https://talha-hanif5666.github.io/',
-    source: 'https://talha-hanif5666.github.io/',
-    img: './Images/',
-  },
-  {
-    id: 6,
-    title: 'Profesional Art Printing Data',
-    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard" ,
-    tecnologies: {
-      tech1: 'html',
-      tech2: 'bootstrap',
-      tech3: 'Ruby',
-    },
-    live: 'https://talha-hanif5666.github.io/',
-    source: 'https://talha-hanif5666.github.io/',
-    img: './Images/desktop-popup.png',
-  },
-  {
-    id: 7,
-    title: 'Profesional Art Printing Data',
-    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard" ,
-    tecnologies: {
-      tech1: 'html',
-      tech2: 'bootstrap',
-      tech3: 'Ruby',
-    },
-    live: 'https://talha-hanif5666.github.io/',
-    source: 'https://talha-hanif5666.github.io/',
-    img: './Images/desktop-popup.png',
-  }
-];
-
-// Applying HTML for desktop cards
-worksectiondesk.innerHTML = `
-
-<div class="frame-desk" id="framedesk">
-  <div class="content-defaults-desk content1-desk">
-    <a href="#">
-      <button class="bigbutton deskbutton" type="button">See Project</button>
-    </a>
-  </div>
-  <div class="content-defaults-desk content2-desk">
-    <a href="#">
-      <button class="bigbutton deskbutton">See Project</button>
-    </a>
-  </div>
-  <div class="content-defaults-desk content3-desk">
-    <a href="#">
-      <button class="bigbutton deskbutton">See Project</button>
-    </a>
-  </div>
-  <div class="content-defaults-desk content4-desk">
-    <a href="#">
-      <button class="bigbutton deskbutton">See Project</button>
-    </a>
-  </div>
-  <div class="content-defaults-desk content5-desk">
-    <a href="#">
-      <button class="bigbutton deskbutton">See Project</button>
-    </a>
-  </div>
-
-</div>
-`;
-
-// Create generic card section for desktop
-const deskworkdetailsSection = (content) => `
-<div class="container-popup-desk">
-  <div class="pop-up-header-desk">
-    <h2>${deskcardDetails[content].title}</h2>
-    <span class="close-desk" id="close-desk-${content}">&times;</span>
-  </div>
-  <div>
-    <ul class="pop-up-tags-desk">
-      <li>${deskcardDetails[content].tecnologies.tech1}</li>
-      <li>${deskcardDetails[content].tecnologies.tech2}</li>
-      <li>${deskcardDetails[content].tecnologies.tech3}</li>
-    </ul>
-  </div>
-  <div class="desk-popup-img">
-    <img src="${deskcardDetails[content].img}" alt="popup-img.png">
-  </div>
-  <div class="popup-description-desk">
-    <p>${deskcardDetails[content].desc}</p>
-  </div>
-  <div class="popup-buttons-desk">
-    <a href="${deskcardDetails[content].live}" class="see-live">See Live <img src="./Images/mob-popup.png"></a>
-    <a href="${deskcardDetails[content].source}" class="see-source">See Source <img src="./Images/pop-icon-github.png"></a>
-  </div></div>
-`;
-
-const deskDetailButtons = document.querySelectorAll('.deskbutton');
-
-// Create pop-up section for desktop
-deskDetailButtons.forEach((button, index) => {
-  button.addEventListener('click', (e) => {
-    e.preventDefault(); // Prevents the default link behavior
-    let div2 = document.createElement('div');
-    div2.classList.add("pop-up-desk");
-    div2.setAttribute("id", `popupdesk-${index}`);
-    div2.innerHTML = deskworkdetailsSection(index);
-    let container = document.querySelector('.deskdiv');
-    container.appendChild(div2);
-    const deskClose = document.querySelector(`#close-desk-${index}`);
-    deskClose.addEventListener('click', () => {
-      container.removeChild(div2);
-    });
-  });
-});
-
-
-
-  
-  //Form Validation
-const contactForm = document.querySelector('.bottomform');
-const fullName = document.querySelector('.username');
-const email = document.querySelector('.email');
-const message = document.querySelector('.textarea');
-const validation = document.querySelector('.errortext');
-
-contactForm.addEventListener('submit',(event) =>{
-  const character = /[A-Z]/;
+const submitForm = (e) => {
+  e.preventDefault();
+  const regex = /^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$/;
   const emailValue = email.value;
-  if(character.test(emailValue)){
-    validation.innerHTML = `Your email shouln't contain block letters!`;
-    event.preventDefault();
+  const nameValue = fullName.value;
+  const messageValue = message.value;
+
+  const showAlert = (message) => {
+    alert.classList.add("show-alert");
+    if (message === "Message sent successfully!") {
+      alert.innerHTML = `<span> <ion-icon name="checkmark" class="alert-icon"></ion-icon> </span> ${message}`;
+    } else {
+      alert.innerHTML = `<span> <ion-icon name="close-circle" class="alert-icon"></ion-icon> </span> ${message}`;
+    }
+    setTimeout(() => {
+      alert.classList.remove("show-alert");
+      alert.classList.remove("alert-success");
+    }, 2500);
+  };
+
+  if (!nameValue || !emailValue || !messageValue) {
+    showAlert("Please enter all required fields");
+    return;
   }
-})
 
- //Form Validation
- const contactForm1 = document.querySelector('.bottomform1');
- const fullName1 = document.querySelector('.username1');
- const email1 = document.querySelector('.email1');
- const message1 = document.querySelector('.textarea1');
- const validation1 = document.querySelector('.errortext1');
- 
- contactForm1.addEventListener('submit',(event) =>{
-   const character1 = /[A-Z]/;
-   const email1Value = email1.value;
-   if(character1.test(email1Value)){
-     validation1.innerHTML = `Your email shouln't contain block letters!`;
-     event.preventDefault();
-   }
- })
+  if (emailValue !== emailValue.toLowerCase()) {
+    showAlert("Please enter lowercase letters.");
+    return;
+  }
 
-  
+  if (!regex.test(emailValue)) {
+    showAlert("Invalid email address!");
+    return;
+  }
+
+// Select all the sections and nav links
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav a");
+
+// Add an event listener to the window that listens for a scroll event
+document.addEventListener("scroll", () => {
+  // Get the current position of the window
+  const currentPosition = window.scrollY + 80;
+  // Loop through all the sections
+  sections.forEach((section) => {
+    // Check if the current position is within the section
+    if (
+      section.offsetTop <= currentPosition
+      && section.offsetTop + section.offsetHeight > currentPosition
+    ) {
+      // Loop through all the nav links
+      navLinks.forEach((link) => {
+        // Remove the active class from all the nav links
+        link.classList.remove("nav-active");
+        // Check if the section id is the same as the nav link href
+        if (
+          section.getAttribute("id") === link.getAttribute("href").substring(1)
+        ) {
+          // Add the active class to the nav link
+          link.classList.add("nav-active");
+        }
+      });
+    }
+  });
+  })};
