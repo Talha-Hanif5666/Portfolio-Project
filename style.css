@@ -379,7 +379,7 @@ a {
     rgba(38, 38, 38, 0) 0.85%,
     rgba(38, 38, 38, 0.9) 84%
   );
-  top: 70px;
+  top: 0px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -1090,7 +1090,7 @@ button:disabled {
       rgba(38, 38, 38, 0) 0.85%,
       rgba(38, 38, 38, 0.9) 84%
     );
-    top: 70px;
+    top: 0px;
     height: 100%;
     display: flex;
     flex-direction: column;
