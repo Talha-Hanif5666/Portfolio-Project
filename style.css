@@ -247,7 +247,7 @@ a {
   width: 70px;
   position: absolute;
   border-radius: 50%;
-  margin: 50px 0 350px 350px;
+  margin: 30px 0 350px 300px;
   border: 1px solid var(--orangeColor);
 }
 
@@ -687,7 +687,7 @@ a {
   color: #fff;
   border: 1px solid var(--orangeColor);
   padding: 12px;
-  margin-top: 100px;
+  margin-top: 0px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
