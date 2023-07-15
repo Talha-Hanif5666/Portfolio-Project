@@ -288,8 +288,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   new Typed(".auto-change", {
     strings: [
-      "Web Developer",
-      "Full Stack Developer",
+      "Full-Stack Web Developer",
       "Front-end Developer",
       "React Native Developer",
     ],

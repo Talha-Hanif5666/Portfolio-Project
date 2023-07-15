@@ -160,7 +160,7 @@ a {
   max-height: 188px;
   font-style: normal;
   font-weight: 400;
-  font-size: 56px;
+  font-size: 36px;
   line-height: 64px;
   letter-spacing: 0.37px;
   color: var(--orangeColor);
@@ -183,7 +183,7 @@ a {
 
 .description-text {
   font-family: var(--poppins);
-  max-width: 327px;
+  max-width: 427px;
   max-height: 176px;
   font-style: normal;
   font-weight: 400;
@@ -247,7 +247,7 @@ a {
   width: 70px;
   position: absolute;
   border-radius: 50%;
-  margin: 137px 0 350px 300px;
+  margin: 50px 0 350px 350px;
   border: 1px solid var(--orangeColor);
 }
 
@@ -687,6 +687,7 @@ a {
   color: #fff;
   border: 1px solid var(--orangeColor);
   padding: 12px;
+  margin-top: 100px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
@@ -933,7 +934,7 @@ button:disabled {
   .profile-pic {
     height: 120px;
     width: 120px;
-    margin: 137px 0 400px 315px;
+    margin: 137px 0 400px 415px;
   }
 }
 
@@ -1194,7 +1195,7 @@ button:disabled {
 
   .main-heading {
     max-width: 407px;
-    font-size: 72px;
+    font-size: 52px;
     line-height: 82px;
   }
 
@@ -1210,7 +1211,7 @@ button:disabled {
 
   .description-text {
     font-family: var(--inter);
-    max-width: 523px;
+    max-width: 623px;
     font-size: 20px;
     line-height: 32px;
     color: #f4f5f7;
@@ -1231,7 +1232,7 @@ button:disabled {
     background-image: url("./Images/main-image-desktop.png");
     width: 480.81px;
     height: 763.48px;
-    z-index: 5;
+    z-index: 0;
     top: 257px;
     position: absolute;
   }
@@ -1239,7 +1240,8 @@ button:disabled {
   .profile-pic {
     height: 160px;
     width: 160px;
-    margin: 0 0 200px 473px;
+    margin: 0 0 200px 673px;
+    z-index: 1;
   }
 
   /* ==========================
